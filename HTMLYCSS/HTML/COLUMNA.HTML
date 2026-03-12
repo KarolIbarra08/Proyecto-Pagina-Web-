@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLUMNA </title>
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+    <link rel="stylesheet" href="/CSS/COLUMNA.CSS">
+</head>
+
+<body>
+    <header>
+        <h1>Columna</h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li>📞 3169195728</li>
+            <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+    
+        <!--SECTION-->
+    <section id="contenedor-bordes">
+
+            <article id="bordes-intro">
+            <header>
+                <h1>Columna</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li>Palabras Magicas</li>
+                    <li>Tipos de linea</li>
+                    <li>Compatibilidad con los navegadores</li>
+                </ul>
+                <p>
+                En CSS, una columna es una forma de dividir el contenido de una página en varias partes verticales, para organizar mejor la información y facilitar su lectura
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+  
+        <!-- PALABRAS MAGICAS -->
+        <article id="columnaMagica">
+
+            <header>
+                <h2>Palabras Magicas</h2>
+            </header>
+
+            <p>
+                Con HTML5 y CSS3 se pueden crear textos en columnas de una manera muy sencilla, pudiendo configurar tanto el espacio existente entre las columnas como las líneas de separación entre columnas.
+            </p>
+
+            <br>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de Frames:</strong></p>
+                <br>
+                <p>
+                    Column-count : definimos el número de columnas en las que queremos dividir el texto.
+                </p>
+                <pre>
+                column-count:2;
+                </pre>
+                <br>
+
+                <p>
+                Column-gap : definimos el espacio (en píxeles) que existirá como mínimo entre las columnas.
+                </p>
+                <pre>
+                column-gap:10px;
+                </pre>
+                <br>
+
+                <p>
+                Column-rule : definimos tres características de las líneas de separación: el grosor, el tipo de línea y por último el color de estas líneas de separación.
+                </p>
+                <pre>
+                column-rule:4px dotted gray;
+                </pre>
+                <br>
+            </div>
+            <br>
+            <p><strong>EJEMPLO PRACTICO</strong></p> 
+            <ol>
+
+                <li>Escribimos el texto que irá en columnas</li>
+
+                <pre>
+                &lt;div id="columnas"&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;Ataúlfo&lt;/li&gt;
+                        &lt;li&gt;Sigerico&lt;/li&gt;
+                        &lt;li&gt;Walia&lt;/li&gt;
+                        &lt;li&gt;Teodoredo&lt;/li&gt;
+                        &lt;li&gt;Turismundo&lt;/li&gt;
+                        &lt;li&gt;Teodorico&lt;/li&gt;
+                        &lt;li&gt;Eurico&lt;/li&gt;
+                        &lt;li&gt;Alarico II&lt;/li&gt;
+                        &lt;li&gt;Gesaleico&lt;/li&gt;
+                        &lt;li&gt;Amalarico&lt;/li&gt;
+                        &lt;li&gt;Teudis&lt;/li&gt;
+                        &lt;li&gt;Teudiselo&lt;/li&gt;
+                        &lt;li&gt;Agila I&lt;/li&gt;
+                        &lt;li&gt;Atanagildo&lt;/li&gt;
+                        &lt;li&gt;Liuva&lt;/li&gt;
+                        &lt;li&gt;Leovigildo&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                </pre>
+                <br>
+                <li> Indicamos las características de las columnas</li>
+                <pre>
+                #columnas{
+                column-count:4;
+                column-gap:20px;
+                column-rule:4px dotted gray;
+                }
+                </pre>
+            </ol>
+
+            <div class="ejemplo">
+            <p><strong>Resultado:</strong></p>
+
+            <ul id="columnasMagicas">
+            <li>Ataúlfo</li>
+            <li>Sigerico</li>
+            <li>Walia</li>
+            <li>Teodoredo</li>
+            <li>Turismundo</li>
+            <li>Teodorico</li>
+            <li>Eurico</li>
+            <li>Alarico II</li>
+            <li>Gesaleico</li>
+            <li>Amalarico</li>
+            <li>Teudis</li>
+            <li>Teudiselo</li>
+            <li>Agila I</li>
+            <li>Atanagildo</li>
+            <li>Liuva</li>
+            <li>Leovigildo</li>
+            </ul>
+
+            </div>
+
+        </article>
+
+
+        <!-- TIPOS DE LINEA -->
+        <article id="tiposLinea">
+
+            <header>
+                <h2>Tipos de linea</h2>
+            </header>
+
+            <ul>
+                <li><strong>None:</strong>Sin línea separadora.</li>
+                <li><strong>Solid:</strong>línea sólida.</li>
+                <li><strong>Dotted:</strong>línea punteada.</li>
+                <li><strong>Dashed:</strong>línea discontinua (segmentos cortos de línea).</li>
+                <li><strong>Double:</strong>doble línea paralela.</li>
+                <li><strong>Groover:</strong>línea en relieve 3D hacia adentro.</li>
+                <li><strong>Ridge:</strong>línea en relieve 3D hacia afuera.</li>
+                <li><strong>Inset:</strong> linea con el color en bajorelieve.</li>
+                <li><strong>Outset:</strong> línea que simula el relieve.</li>
+            </ul>
+
+            <br>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de código:</strong></p>
+
+            <pre>
+                column-rule:6px double gray;
+            </pre>
+
+            </div>
+
+            <div class="ejemploMio">
+            <p><strong>Resultado:</strong></p>
+
+            <p><strong>Resultado:</strong></p>
+                
+                <h4>None</h4>
+                <ul id="lineaNone">
+                <li>Ataúlfo</li>
+                <li>Sigerico</li>
+                <li>Walia</li>
+                <li>Teodoredo</li>
+                </ul>
+
+
+                <h4>Solid</h4>
+                <ul id="lineaSolid">
+                <li>Ataúlfo</li>
+                <li>Sigerico</li>
+                <li>Walia</li>
+                <li>Teodoredo</li>
+                </ul>
+
+
+                <h4>Dotted</h4>
+                <ul id="lineaDotted">
+                <li>Ataúlfo</li>
+                <li>Sigerico</li>
+                <li>Walia</li>
+                <li>Teodoredo</li>
+                </ul>
+
+
+                <h4>Dashed</h4>
+                <ul id="lineaDashed">
+                <li>Ataúlfo</li>
+                <li>Sigerico</li>
+                <li>Walia</li>
+                <li>Teodoredo</li>
+                </ul>
+        
+
+                <h4>Double</h4>
+                <ul id="lineaDouble">
+                <li>Ataúlfo</li>
+                <li>Sigerico</li>
+                <li>Walia</li>
+                <li>Teodoredo</li>
+                </ul>
+
+
+                <h4>Groove</h4>
+                <ul id="lineaGroove">
+                <li>Ataúlfo</li>
+                <li>Sigerico</li>
+                <li>Walia</li>
+                <li>Teodoredo</li>
+                </ul>
+       
+
+                <h4>Ridge</h4>
+                <ul id="lineaRidge">
+                <li>Ataúlfo</li>
+                <li>Sigerico</li>
+                <li>Walia</li>
+                <li>Teodoredo</li>
+                </ul>
+      
+
+                <h4>Inset</h4>
+                <ul id="lineaInset">
+                <li>Ataúlfo</li>
+                <li>Sigerico</li>
+                <li>Walia</li>
+                <li>Teodoredo</li>
+                </ul>
+                
+            
+                <h4>Outset</h4>
+                <ul id="lineaOutset">
+                <li>Ataúlfo</li>
+                <li>Sigerico</li>
+                <li>Walia</li>
+                <li>Teodoredo</li>
+                </ul>
+    
+
+            </div>
+
+        </article>
+
+        <!-- COMPATIBILIDAD DE NAVEGADORES -->
+        <article id="compatibilidadNavegadores">
+
+        <header>
+        <h2>Compatibilidad de navegadores</h2>
+        </header>
+
+        <p>
+        Como los diferentes navegadores todavía no han podido ponerse de acuerdo en una sintaxis compartida por todos, el código referido a las columnas lo tenemos que repetir, anteponiendo los tres prefijos que agrupan a los diferentes tipos de navegadores:
+        </p>
+
+        <ul>
+        <li><strong>-webkit-</strong>: para los navegadores Chrome y Safari.</li>
+        <li><strong>-moz-</strong>: para Firefox.</li>
+        <li><strong>-o-</strong>: para Opera.</li>
+        <li><strong>-ms-</strong>: para Internet Explorer.</li>
+        </ul>
+
+        <br>
+
+        <div class="ejemplo-codigo">
+
+        <p><strong>Ejemplo de columna:</strong></p>
+
+        <pre>
+        #columnas{
+        column-count:4;
+        column-gap:20px;
+        column-rule:4px double black;
+        list-style:none;
+
+        -webkit-column-count:4;
+        -webkit-column-gap:20px;
+        -webkit-column-rule:4px double black;
+
+        -moz-column-count:4;
+        -moz-column-gap:20px;
+        -moz-column-rule:4px double black;
+
+        -o-column-count:4;
+        -o-column-gap:20px;
+        -o-column-rule:4px double black;
+
+        -ms-column-count:4;
+        -ms-column-gap:20px;
+        -ms-column-rule:4px double black;
+        }
+        </pre>
+
+        </div>
+
+        <div class="ejemplo">
+
+        <p><strong>Resultado:</strong></p>
+
+        <ul id="columnaServidor">
+        <li>Ataúlfo</li>
+        <li>Sigerico</li>
+        <li>Walia</li>
+        <li>Teodoredo</li>
+        <li>Turismundo</li>
+        <li>Teodorico</li>
+        <li>Eurico</li>
+        <li>Alarico II</li>
+        <li>Gesaleico</li>
+        <li>Amalarico</li>
+        <li>Teudis</li>
+        <li>Teudiselo</li>
+        <li>Agila I</li>
+        <li>Atanagildo</li>
+        <li>Liuva</li>
+        <li>Leovigildo</li>
+        </ul>
+
+        </div>
+
+        </article>
+
+        </section>
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li>📞 Tel: 3169195728</li>
+                <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

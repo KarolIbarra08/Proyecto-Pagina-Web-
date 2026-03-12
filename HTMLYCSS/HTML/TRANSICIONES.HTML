@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones </title>
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+    <link rel="stylesheet" href="/CSS/TRANSICIONES.CSS">
+</head>
+
+<body>
+    <header>
+        <h1>Transiciones</h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li>📞 3169195728</li>
+            <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+    <!--SECTION-->
+    <section id="contenedor-bordes">
+
+            <article id="bordes-intro">
+            <header>
+                <h1>Transiciones</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li>Transiciones unica propiedad </li>
+                    <li>Transiciones multiples propiedades</li>
+                    <li>Transiones con palabras magicas</li>
+                    <li>Compatibilidad con navegadores</li>
+                </ul>
+                <p>
+                En CSS, una transición es un efecto que permite que un cambio en una propiedad de estilo ocurra de manera gradual y suave, en lugar de cambiar de forma inmediata o brusca
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+  
+        <!-- TRANSICIONES -->
+            <article id="transiciones">
+
+                <header>
+                    <h2>Tansiciones</h2>
+                </header>
+
+                <p>
+                Las transiciones (transition) funcionan como pequeñas animaciones que siguen las mismas características que la etiqueta 'transform' (cambio de posición, tamaño, rotación...) aunque con la capacidad de poder especificar una duración para que se produzca dicha transformación y así poder utilizarla como una animación sencilla.
+                </p>
+                <br>
+                <p>
+                A este div le vamos a aplicar varias transiciones (de posición, tamaño y rotación) y para que podamos activar cada una de ellas en el momento que queramos deberás pasar el cursor por encima de cada ejemplo.
+                </p>
+                <br>
+                <ul>
+                    <li>webkit- (para Chrome y Safari)</li>
+                    <li>moz- (para Firefox).</li> 
+                    <li>o- (para Opera)</li> 
+                    <li>ms- (para las versiones modernas de Internet Explorer)</li>
+                </ul>
+        </article>
+
+        <!-- TRANSICIONES CON UNICA PROPIEDAD -->
+            <article id="transicionesUnica">
+
+                <header>
+                    <h2>Transicones Con Una Unica Propiedad</h2>
+                </header>
+
+                <p>
+                Cuando pases con el cursor por encima del martillo que hay bajo este texto se producirá una transición que durará 1 segundo y medio y queproducirá que el <div> martillo se desplace horizontamente 400 píxeles hacia la derecha. 
+                </p>
+                <br>
+                
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de transiciones:</strong></p>
+
+                <pre>
+               #martillo{
+                transition:left 1.5s;
+                }
+
+                #martillo:hover{
+                position:relative;
+                left:400px;
+                }
+                </pre>
+                <br>
+                <p>
+                En el código se usa un div  (#martillo) que contiene el objeto que se va a mover. La transición hace que el elemento se desplace hacia la derecha durante 1.5 segundos cuando el usuario pasa el cursor sobre él (:hover).
+                Para que el movimiento funcione se cambia el valor de left, y por eso es necesario que la propiedad position sea absolute o relative
+                </p>
+                </div>
+
+                <div class="ejemplo">
+                    <p><strong>Resultado:</strong></p>
+
+                    <img id="mariposaUnica" src="/IMAGEN/MARIPOSA.png" alt="Mariposa">
+
+                    </div>
+                
+        </article>
+
+        
+        <!-- TRANSICIONES  CON MULTIPLES PROPIEDADES -->
+            <article id="transformacionEscala">
+
+                <header>
+                    <h2>Escala</h2>
+                </header>
+
+                <p>
+                Para especificar el cambio de varias propiedades con diferentes tiempos para para cada una de ellas, únicamente tenemos que separar las diferentes propiedades con ",".
+                </p>
+                <br>
+                <p>
+                Así, en este ejemplo, al pasar el cursor por encima, se producirán 6 cambios de propiedades al mismo tiempo
+                </p>
+                <br>
+                <ul>
+                    <li>El div martillo se moverá 400px hacia la derecha (utilizando 'left') en 1.5 segundos.</li>.
+                    <li>El color de fondo ('background-color') del <div> martillo se convertirá en negro en 2 segundos.</li>
+                    <li>La anchura del div se modificará hasta llegar a los 225 píxeles en 1 segundo.</li>
+                    <li>La altura del  se modificará hasta llegar a los 200 píxeles (empujando hacia abajo el contenido que le sigue) durante 1 segundo.</li>
+                    <li>El espacio que hay diventre el extremo izquierdo del <div> y el dibujo que éste contiene ('padding-left') se expandirá hasta llegar a los 100 pixeles en 1 segundo.</li>
+                    <li>El espacio que hay entre el extremo superior del <div> y el dibujo que éste contiene ('padding-top') se expandirá hasta llegar a los 20 pixeles en 1 segundo.</li>
+                </ul>
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de transiciones:</strong></p>
+
+                <pre>
+                #martillo{
+                background-color:orange;
+                width:100px;
+                height:175px;
+                transition:left 1.5s, background-color 2s, width 1s, height 1s, padding-left 1s, padding-top 1s;
+                }
+
+                #martillo:hover{
+                position:relative;
+                left:400px;
+                background-color:black
+                width:225px;
+                height:200px;
+                padding-left:100px;
+                padding-top:20px;
+                }
+                </pre>
+                <br>
+                <p>
+                En el primer selector (#martillo) se especifican los valores iniciales (color de fondo 'background-color', anchura 'width' y altura 'height'), los que no se definan (como 'padding-left' y 'padding-top') se tomarán los valores por defecto.
+                </p>
+                </div>
+
+                <div class="ejemplo">
+                    <p><strong>Resultado:</strong></p>
+                    <br>
+                    <img id="mariposaMultiple" src="/IMAGEN/MARIPOSA.png" alt="Mariposa">
+
+                    </div>
+        </article>
+    
+       <!-- PALABRA MAGICAS-->
+            <article id="transiconesMagicas">
+
+                <header>
+                    <h2>Palabras Magicas</h2>
+                </header>
+
+                <p>
+                Aunque no es obligatorio, tenemos la posibilidad de especificar el tipo de movimiento y si debe existir algún retardo para que empiece la animación.
+                </p>
+                <br>
+
+                <p>
+                Además, como todavia es necesario repetir el código anteponiendo los prefijos -webkit-, -moz-, -op- y -ms- (para asegurar la compatibilidad con todos los navegadores), es interesante poder especificar todos estos parámetros en una sola línea.
+                </p>
+
+                <table border="1">
+                <thead>
+                    <tr>
+                        <th>Elemento</th>
+                        <th>Descripción</th>
+                        <th>Ejemplos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Propiedades a modificar</strong></td>
+                        <td>
+                            Son las propiedades CSS que cambiarán durante la transición.
+                        </td>
+                        <td>
+                            all, background-color, border, border-radius, color, top, bottom,
+                            left, right, box-shadow, width, height, line-height, margin,
+                            opacity, word-spacing, letter-spacing, fill, padding, stroke,
+                            text-shadow, vertical-align, visibility, z-index
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Duración en segundos</strong></td>
+                        <td>
+                            Indica cuánto tiempo durará la animación. 
+                            Se escribe el número seguido de la letra <strong>s</strong>.
+                        </td>
+                        <td>
+                            1s, 2s, 3s
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Tipo de animación</strong></td>
+                        <td>
+                            Define la velocidad del movimiento durante la transición.
+                        </td>
+                        <td>
+                            linear, ease, ease-in, ease-out, ease-in-out
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Retardo</strong></td>
+                        <td>
+                            Tiempo que el navegador espera antes de comenzar la animación.
+                        </td>
+                        <td>
+                            0.5s, 1s, 2s
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de transiciones:</strong></p>
+
+                <pre>
+                transition:[propiedad a modificar] [Duración en segundos] [Tipo de animación] [Retardo];
+                transition: width 2s ease-out, 0.5s;
+                </pre>
+                <br>
+                <pre>
+                #martillo{
+                opacity:1;
+                transition:opacity 2s ease-out 0.5s;
+                }
+
+                #martillo:hover{
+                opacity:0;	
+                }
+                </pre>
+                <p>Cuando coloques el cursor encima del martillo que hay sobre estas líneas, primero -se esperará medio segundo (0.5s)-, después de la espera, el martillo se irá haciendo transparente en una animación con deceleración (ease-out) que durará 2 segundos (empezará muy rápido y a medida que vaya haciendose transparente irá reduciendo la velocidad).</p>
+                </div>
+
+                <div class="ejemplo">
+                    <p><strong>Resultado:</strong></p>
+                    <br>
+                    <img id="mariposaMagica" src="/IMAGEN/MARIPOSA.png" alt="Mariposa">
+                    </div>
+        </article>
+
+           
+        <!-- COMPATIBILIDAD DE NAVEGADORES -->
+            <article id="transformacionCompatibilidad">
+
+                <header>
+                    <h2>Compatibilidad de navegadores</h2>
+                </header>
+
+                <p>
+                   Para garantizar la compatibilidad con navegadores antiguos, las transiciones es conveniente que lleven los prefijos, quedando de esta manera un código más largo que la deuda exterior de Zaire.
+
+                </p>
+                <br>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de transformacion:</strong></p>
+
+                <pre>
+               #martillo{
+                opacity:1;
+                -webkit-opacity:1;
+                -moz-opacity:1;
+                -o-opacity:1;
+                -ms-opacity:1;
+
+                transition:opacity 2s ease-out 0.5s;
+                -webkit-transition:opacity 2s ease-out 0.5s;
+                -moz-transition:opacity 2s ease-out 0.5s;
+                -o-transition:opacity 2s ease-out 0.5s;
+                -ms-transition:opacity 2s ease-out 0.5s;
+                }
+
+                #martillo:hover{
+                opacity:0;	
+                -webkit-opacity:0;
+                -moz-opacity:0;
+                -o-opacity:0;
+                -ms-opacity:0;
+                }
+                </pre>
+                <br>
+                </div>
+
+                <div class="ejemplo">
+                    <p><strong>Resultado:</strong></p>
+                    <br>
+                    <img id="mariposaCompatibilidad" src="/IMAGEN/MARIPOSA.png" alt="Mariposa">
+                    </div>
+        </article>
+
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li>📞 Tel: 3169195728</li>
+                <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

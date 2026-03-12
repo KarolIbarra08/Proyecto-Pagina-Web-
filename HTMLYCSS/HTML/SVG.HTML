@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+    <link rel="stylesheet" href="/CSS/SVG.CSS">
+</head>
+
+<body>
+    <header>
+        <h1>SVG</h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li>📞 3169195728</li>
+            <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+    <!--SECTION-->
+    <section id="contenedor-bordes">
+
+            <article id="bordes-intro">
+            <header>
+                <h1>SVG</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li>SVG</li>
+                    <li>Etiquetas</li>
+                </ul>
+                <p>
+                Un SVG en CSS y HTML es un formato de imagen vectorial que permite dibujar figuras (líneas, círculos, rectángulos, caminos, etc.) usando código, y que puede ser estilizado o animado con CSS.
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+  
+        <!--SVG -->
+            <article id="svg">
+
+                <header>
+                    <h2>SVG</h2>
+                </header>
+
+                <p>
+                Con el elemento SVG (Scalable Vector Graphics) podemos crear imágenes vectoriales redimensionables de manera dinámica o interactiva utilizando diferentes atributos. Al convertirse en 2001 en una recomendación del W3C ya es aceptado en la mayoría de navegadores (Firefox desde la versión 1.5, Opera desde su versión 8, Chrome y Safari de manera conjunta, y también increiblemente Internet Explorer, desde su versión 9).
+                </p>
+                <br>
+
+                <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de SVG:</strong></p>
+                <pre>
+                &lt;svg width="150" height="90" xmlns="http://www.w3.org/2000/svg"&gt;
+                &lt;rect width="150" height="90" fill="red" stroke="black" stroke-width="1"/&gt;
+                &lt;rect x="40" y="33" width="70" height="24" fill="white"/&gt;
+                &lt;rect x="63" y="10" width="24" height="70" fill="white"/&gt;
+                &lt;/svg&gt;
+                </pre>
+                
+            
+                </div>
+
+                <div class="ejemplo">
+                <p><strong>Resultado:</strong></p>
+
+                <p>Suiza</p>
+                <svg width="150" height="90" xmlns="http://www.w3.org/2000/svg">
+                <rect width="150" height="90" fill="red" stroke="black" stroke-width="1"/>
+                <rect x="40" y="33" width="70" height="24" fill="white"/>
+                <rect x="63" y="10" width="24" height="70" fill="white"/>
+                </svg>
+
+                <p>Noruega</p>
+                <svg width="150" height="90" xmlns="http://www.w3.org/2000/svg">
+                <rect width="150" height="90" fill="red" stroke="black" stroke-width="1"/>
+                <rect x="38" y="0" width="30" height="90" fill="white"/>
+                <rect x="0" y="33" width="150" height="30" fill="white"/>
+                <rect x="45" y="0" width="16" height="90" fill="blue"/>
+                <rect x="0" y="40" width="150" height="16" fill="blue"/>
+                </svg>
+
+                <p>Italia</p>
+                <svg width="150" height="90" xmlns="http://www.w3.org/2000/svg">
+                <rect width="150" height="90" fill="green" stroke="black" stroke-width="1"/>
+                <rect x="50" y="0" width="50" height="90" fill="white"/>
+                <rect x="100" y="0" width="50" height="90" fill="red"/>
+                </svg>
+
+                </div>
+        </article>
+
+        <!-- ETIQUETAS -->
+            <article id="etiquetas">
+
+                <header>
+                    <h2>Etiquetas</h2>
+                </header>
+                <br>
+                
+            <div class="ejemplo-codigo">
+
+            <ul>
+            <li><strong>SVG:</strong> El código correcto debe estar dentro de la etiqueta svg.</li>
+
+            <pre>
+            &lt;svg width="300" height="200" xmlns="http://www.w3.org/2000/svg"&gt;
+            &lt;/svg&gt;
+            </pre>
+
+            </ul>
+
+            <ul>
+            <li><strong>rect:</strong> Permite crear rectángulos o cuadrados.</li>
+
+            <pre>
+            &lt;rect x="0" y="0" rx="12" ry="12" width="60" height="60"
+            fill="gold" stroke="green" stroke-width="1" opacity="0.8"/&gt;
+            </pre>
+
+            </ul>
+
+            <div class="ejemplo">
+            <p><strong>Resultado:</strong></p>
+
+            <svg width="120" height="100" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" rx="12" ry="12" width="60" height="60"
+            fill="gold" stroke="green" stroke-width="1" opacity="0.8"/>
+            </svg>
+
+            </div>
+
+
+
+            <ul>
+            <li><strong>circle:</strong> Permite crear círculos.</li>
+
+            <pre>
+            &lt;circle cx="60" cy="50" r="30" fill="olive"
+            stroke="black" stroke-width="2"/&gt;
+            </pre>
+
+            </ul>
+
+            <div class="ejemplo">
+            <p><strong>Resultado:</strong></p>
+
+            <svg width="120" height="100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="50" r="30" fill="olive"
+            stroke="black" stroke-width="2"/>
+            </svg>
+
+            </div>
+
+
+
+            <ul>
+            <li><strong>ellipse:</strong> Permite crear elipses.</li>
+
+            <pre>
+            &lt;ellipse cx="80" cy="50" rx="60" ry="25"
+            fill="purple" stroke="black"/&gt;
+            </pre>
+
+            </ul>
+
+            <div class="ejemplo">
+            <p><strong>Resultado:</strong></p>
+
+            <svg width="160" height="100" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="80" cy="50" rx="60" ry="25"
+            fill="purple" stroke="black"/>
+            </svg>
+
+            </div>
+
+
+
+            <ul>
+            <li><strong>line:</strong> Permite crear líneas.</li>
+
+            <pre>
+            &lt;line x1="10" y1="10" x2="150" y2="60"
+            stroke="fuchsia" stroke-width="4"/&gt;
+            </pre>
+
+            </ul>
+
+            <div class="ejemplo">
+            <p><strong>Resultado:</strong></p>
+
+            <svg width="170" height="80" xmlns="http://www.w3.org/2000/svg">
+            <line x1="10" y1="10" x2="150" y2="60"
+            stroke="fuchsia" stroke-width="4"/>
+            </svg>
+
+            </div>
+
+
+
+            <ul>
+            <li><strong>polyline:</strong> Permite crear líneas conectadas.</li>
+
+            <pre>
+            &lt;polyline points="20,80 40,40 60,80 80,40 100,80"
+            fill="none" stroke="blue" stroke-width="3"/&gt;
+            </pre>
+
+            </ul>
+
+            <div class="ejemplo">
+            <p><strong>Resultado:</strong></p>
+
+            <svg width="130" height="100" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="20,80 40,40 60,80 80,40 100,80"
+            fill="none" stroke="blue" stroke-width="3"/>
+            </svg>
+
+            </div>
+
+
+
+            <ul>
+            <li><strong>polygon:</strong> Permite crear figuras cerradas.</li>
+
+            <pre>
+            &lt;polygon points="50,0 82,100 0,37 100,37 20,100"
+            fill="gold" stroke="black" stroke-width="3"/&gt;
+            </pre>
+
+            </ul>
+
+            <div class="ejemplo">
+            <p><strong>Resultado:</strong></p>
+
+            <svg width="120" height="110" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="50,0 82,100 0,37 100,37 20,100"
+            fill="gold" stroke="black" stroke-width="3"/>
+            </svg>
+
+            </div>
+
+
+
+            <ul>
+            <li><strong>text:</strong> Permite escribir texto dentro del SVG.</li>
+
+            <pre>
+            &lt;text x="30" y="40"
+            fill="red" stroke="white" stroke-width="1"&gt;
+            SVG
+            &lt;/text&gt;
+            </pre>
+
+            </ul>
+
+            <div class="ejemplo">
+            <p><strong>Resultado:</strong></p>
+
+            <svg width="120" height="70" xmlns="http://www.w3.org/2000/svg">
+            <text x="30" y="40"
+            fill="red" stroke="white" stroke-width="1">
+            SVG
+            </text>
+            </svg>
+
+            </div>
+
+            </div>
+
+
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li>📞 Tel: 3169195728</li>
+                <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

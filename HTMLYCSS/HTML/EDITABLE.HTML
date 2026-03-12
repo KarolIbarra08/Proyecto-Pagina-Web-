@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido Editable</title>
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+    <link rel="stylesheet" href="/CSS/EDITABLE.CSS">
+    <link rel="stylesheet" href="/JAVASCRIPT/INDEX.JS">
+</head>
+
+<body>
+    <header>
+        <h1>Contenido Editable</h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li>📞 3169195728</li>
+            <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+    <!--SECTION-->
+    <section id="contenedor-bordes">
+
+            <article id="bordes-intro">
+            <header>
+                <h1>Contenido Editable</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li>Contenido Editable</li>
+                </ul>
+                <p>
+                En CSS/HTML, el contenido editable se refiere a elementos de una página web que pueden ser modificados directamente por el usuario desde el navegador, sin necesidad de formularios o programación adicional.
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+  
+        <!--CONTENIDO EDITABLE -->
+            <article id="contenidoEditable">
+
+                <header>
+                    <h2>Contenido Editable</h2>
+                </header>
+
+                <p>
+                Para que un contenido sea editable (es decir, para que el usuario pueda modificar, eliminar o añadir texto) desde el propio navegador, dicho texto tiene que estar ubicado dentro de un <div> o de una etiqueta semántica (article, section...) con la propiedad 'contenteditable=true':
+                <br>
+
+                <div class="ejemplo-codigo">
+                <pre>
+                &lt;section id="editable" contenteditable="true"&gt;
+                &lt;h2&gt;Escribe tu pedido:&lt;/h2&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;2 bolsas de patatas&lt;/li&gt;
+                        &lt;li&gt;1 dónut&lt;/li&gt;
+                        &lt;li&gt;4 Kg. de boniatos&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/section&gt;
+                </pre>
+                <br>
+                <p>
+                    Si añades más elementos de los que caben dentro de la lista aparecerá un scroll vertical, que se produce gracias a este código CSS:
+                </p>
+                <br>
+                <pre>
+                #editable{
+                overflow:auto;
+                }
+                </pre>
+                <br>
+                <p>Para recuperar las modificaciones o cambios se realiza por el usuario utilizando javaSript o jQuery.</p>
+                <pre>
+                &lt;button onclick="alert(document.getElementById('ejemplo').innerText)"&gt;
+                Leer el contenido
+                &lt;/button&gt;
+                </pre>
+                </div>
+
+        <div class="ejemplo">
+            <p>Resultado:</p>
+            <br>
+
+            <section id="editable" contenteditable="true">
+                <h2>Escribe tu pedido:</h2>
+                <ul>
+                    <li>2 bolsas de patatas</li>
+                    <li>1 dónut</li>
+                    <li>4 Kg. de boniatos</li>
+                </ul>
+            </section>
+
+            <button id="leerContenido">Leer el contenido</button>
+
+        </div>
+
+    </article>
+
+</section>
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li>📞 Tel: 3169195728</li>
+                <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/JAVASCRIPT/EDITABLE.JS"></script>
+
+</body>
+
+</html>

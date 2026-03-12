@@ -1,0 +1,4 @@
+# Ignorar carpetas y archivos que no deberían subirse
+node_modules/
+build/
+.env

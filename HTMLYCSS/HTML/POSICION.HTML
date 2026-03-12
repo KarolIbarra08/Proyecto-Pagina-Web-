@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicion de elementos </title>
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+    <link rel="stylesheet" href="/CSS/POSICION.CSS">
+</head>
+
+<body>
+    <header>
+        <h1>Posicion de elementos</h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li>📞 3169195728</li>
+            <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+    
+        <!--SECTION-->
+    <section id="contenedor-bordes">
+
+            <article id="bordes-intro">
+            <header>
+                <h1>Posicionamiento de elementos</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li> Posicionamiento relative </li>
+                    <li>Posicionamiento absolute</li>
+                    <li>Posicionamiento fixed</li>
+                </ul>
+                <p>
+                 El posicionamiento de cajas en CSS es la forma en que se ubican o colocan los elementos (como div, section, article, etc.) dentro de una página web. Estas “cajas” forman parte del modelo de caja de CSS y se pueden mover o acomodar en diferentes lugares de la pantalla.
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+  
+        <!-- POSICIONAMIENTO DE CAJAS -->
+            <article id="posicionamientoCajas">
+
+                <header>
+                    <h2>Posicionamiento de cajas</h2>
+                </header>
+
+                <p>
+               Existen tres opciones de posicionamiento de las cajas dentro del body.
+                </p>
+
+                <ul>
+                    <li><strong>Relative:</strong>Es el posicionamiento por defecto. Las cajas se colocan en relación con las demás y si una cambia de tamaño o posición, las otras se mueven. No permite colocar una caja encima de otra.</li>
+                    <li><strong>Absolute:</strong>Permite colocar una caja en una posición exacta sin depender de las otras cajas. Con este tipo sí se puede poner una caja encima de otra.</li>
+                    <li><strong>Fixed:</strong>Funciona parecido al absoluto, pero la caja se queda fija en la pantalla aunque se haga scroll en la página.</li>
+                </ul>
+
+           <div class="ejemplo-codigo">
+
+            <p><strong>Ejemplo de posición de cajas:</strong></p>
+
+            <pre>
+            #caja_relative{
+                position: relative;
+                top:20px;
+                left:30px;
+            }
+
+            #caja_absolute{
+                position: absolute;
+                top:40px;
+                left:150px;
+            }
+
+            #caja_fixed{
+                position: fixed;
+                bottom:20px;
+                right:20px;
+            }
+            </pre>
+
+            </div>
+
+            <div class="ejemplo">
+                <p><strong>Resultado:</strong></p>
+
+                <div id="contenedor-posicion">
+
+                    <div id="caja_relative">Relative</div>
+
+                    <div id="caja_absolute">Absolute</div>
+
+                </div>
+
+                <div id="caja_fixed">Fixed</div>
+
+                </div>
+
+        </article>
+
+        <!-- IMPORTANTE -->
+            <article id="importante">
+
+                <header>
+                    <h2>Importante</h2>
+                </header>
+
+                <p>
+                Al definir el posicionamiento como absolute o como fixed es necesario indicar la posición o coordenada exacta en la que se desea ubicar la caja (o div).
+                </p>
+                <br>
+                <p>
+                    Para ello podemos utilizar los siguientes valores:
+                </p>
+
+                <ul>
+                    <li><strong>Left:</strong>Especifica la coordenada horizontal, empezando a contar desde el extremo izquierdo.</li>
+                    <li><strong>Righ:</strong>Especifica la coordenada horizontal, empezando a contar desde el extremo derecho.</li>
+                    <li><strong>Top:</strong>Especifica la coordenada vertical, empezando a contar desde el extremo superior.</li>
+                    <li><strong>Bottom:</strong>Especifica la coordenada vertical, empezando a contar desde el extremo inferior..</li>
+                </ul>
+
+                <br>
+                <p>
+                Cuando se usa posición absolute, el elemento puede cambiar de lugar si cambia el tamaño de la ventana del navegador.
+                Para evitar este problema, se recomienda colocar el <div> con posición absoluta dentro de un contenedor con posición relative, así su posición se mantiene correcta.
+                </p>
+           <div class="ejemplo-codigo">
+
+            <p><strong>Ejemplo de posición de cajas:</strong></p>
+
+            <pre>
+                #contenedor{
+                position:relative;
+                }
+
+                #div_absoluto{
+                position:absolute;
+                }
+            </pre>
+
+            </div>
+
+            <div class="ejemplo">
+                <p><strong>Resultado:</strong></p>
+
+                <div id="contenedor-posicion">
+
+                    <div id="caja_relative1">Relative</div>
+                    <div id="caja_absolute1">Absolute</div>
+                    
+                </div>
+
+                </div>
+                
+        </article>
+           
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li>📞 Tel: 3169195728</li>
+                <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

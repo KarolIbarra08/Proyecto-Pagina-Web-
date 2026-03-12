@@ -1,0 +1,137 @@
+#coloresPredefinidos .color-tomato { 
+    background-color: tomato; color: white; padding: 10px; margin: 5px 0; 
+}
+#coloresPredefinidos .color-gold { 
+    background-color: gold; color: black; padding: 10px; margin: 5px 0; 
+}
+#coloresPredefinidos .color-olive { 
+    background-color: olive; color: white; padding: 10px; margin: 5px 0; 
+}
+#coloresPredefinidos .color-chocolate {
+     background-color: chocolate; color: white; padding: 10px; margin: 5px 0; 
+    }
+#coloresPredefinidos .color-silver {
+     background-color: silver; color: black; padding: 10px; margin: 5px 0; 
+    }
+#coloresPredefinidos .color-magenta {
+     background-color: magenta; color: white; padding: 10px; margin: 5px 0; 
+    }
+#coloresPredefinidos .color-salmon { 
+    background-color: salmon; color: white; padding: 10px; margin: 5px 0;
+ }
+
+#transparencias .transparencia-bg {
+  background-color: rgba(255, 0, 0, 0.4);
+  padding: 20px;
+  margin: 10px 0;
+  color: black;
+}
+
+#transparencias .transparencia-opacity {
+  background-color: red;
+  opacity: 0.4;
+  padding: 20px;
+  margin: 10px 0;
+  color: black;
+}
+
+/* Contenedor que centra los elementos */
+#degradadoLineal .ejemplo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Degradado 1 */
+#degradadoLineal .degradado-lineal1 {
+  background: linear-gradient(to bottom, red, gold);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 60px 20px;
+}
+
+/* Degradado 2 */
+#degradadoLineal .degradado-lineal2 {
+  background: linear-gradient(30deg, crimson, sienna, royalblue, indianred, purple);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 60px 20px;
+}
+
+/* Degradado 3 */
+#degradadoLineal .degradado-lineal3 {
+  background: linear-gradient(to bottom, 
+                              black 0%, 
+                              orangered 10%, 
+                              orangered 75%, 
+                              yellow 75%, 
+                              yellow 100%);
+  padding: 20px;      
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 60px 20px;
+}
+
+#degradadoRadial .ejemplo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#degradadoRadial .degradado-radiales1{
+  background: radial-gradient(circle at center, black, #1162ac);
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+  margin: 20px auto;
+  width: 50%;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+#degradadoRadial .degradado-radiales2{
+  background: radial-gradient(ellipse at top center, white, #1162ac, black);
+  padding: 60px 20px;
+  color: black;
+  text-align: center;
+  margin: 20px auto;
+  width: 50%;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+#degradadoRadial .degradado-radiales3{
+  background: radial-gradient(circle at center, white 25%, peru 66%, black 96%);
+  padding: 60px 20px;
+  color: black;
+  text-align: center;
+  margin: 20px auto;
+  width: 50%;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+#navegacionTransparencia{
+    width:300px;
+    height:120px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 60px 20px;
+    background:-webkit-linear-gradient(top, red, gold);
+    background:-moz-linear-gradient(top, red, gold);
+    background:-o-linear-gradient(top, red, gold);
+    background:-ms-linear-gradient(top, red, gold);
+    background:linear-gradient(to bottom, red, gold);
+}

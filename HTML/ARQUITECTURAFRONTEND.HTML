@@ -1,0 +1,384 @@
+<html>
+
+<head>
+  <title>Paginas Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color:#D8F0F2; color:#000000;font-family: 'Times New Roman', Times, serif;"></body>
+
+  <!--titulo principal -->
+  <div style="text-align:center; margin-top:20px;">
+    <h1 style="font-family:serif; color:#000000;">
+      <strong>Arquitectura FRONEND</strong>
+    </h1>
+  </div>
+  <hr>
+
+  <!-- Navbar-->
+       <nav class="navbar navbar-expand-lg" style="background-color: #F2B6C6;">
+    <div class="container-fluid">
+      <a class="navbar-brand p-0 m-0 d-flex align-items-center" href="index.html">
+        <img src="IMAGEN/LOGOSINFONDO.png" alt="Logo"
+          style="height: 100px; width: auto; display: block; object-fit: cover;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-4" style="font-family: serif; font-size: 1.6rem;">
+
+          <li class="nav-item">
+            <li class="nav-item"><a class="nav-link active text-black" href="CONTENIDOPRINCIPAL.HTML" target="_blank" rel="noopener noreferrer"><strong>Inicio</strong></a></li>
+          </li>
+
+          <!-- Arquitectura Web con submenu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown">
+              <strong>Arquitectura Web</strong>
+            </a>
+            <ul class="dropdown-menu" style="font-family: serif;">
+              <li><a class="dropdown-item" href="ARQUITECTURADEPAGINASWEB.HTML" target="_blank">Informacion de Arquitectura Web</a></li>
+              <li><a class="dropdown-item" href="ARQUITECTURADEPAGINASWEB.HTML#tiposArquitecturaWeb " target="_blank">Tipos de
+                  Arquitectura Web</a></li>
+            </ul>
+          </li>
+
+          <!-- Arquitectura Frontend con submenu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown">
+              <strong>Arquitectura Frontend</strong>
+            </a>
+            <ul class="dropdown-menu" style="font-family: serif;">
+              <li><a class="dropdown-item" href="ARQUITECTURAFRONTEND.HTML" target="_blank" >Informacion de Arquitectura Frontend</a>
+              </li>
+              <li><a class="dropdown-item" href="ARQUITECTURAFRONTEND.HTML#tiposArquitecturaFrontend" target="_blank" >Tipos de Arquitectura
+                  Frontend</a></li>
+          </li>
+        </ul>
+        <!-- Recursos / BD -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown">
+            <strong>Recursos / Juego</strong>
+          </a>
+          <ul class="dropdown-menu" style="font-family: serif;">
+            <li><a class="dropdown-item" href="JUEGOS.HTML" target="_blank">Juego evaluativo</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="https://unimayor.edu.co/web/biblioteca" target="_blank">Biblioteca
+                UNIMAYOR</a></li>
+            <li><a class="dropdown-item" href="https://scholar.google.com/?hl=es" target="_blank">Google Académico</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Contacto -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown">
+            <strong>Contacto</strong>
+          </a>
+          <ul class="dropdown-menu" style="font-family: serif;">
+            <li><a class="dropdown-item" href="tel:+573169195728">Teléfono (3169195728)</a></li>
+            <li><a class="dropdown-item" href="mailto:kt.ibarra@unimayor.edu.co">Correo (kt.ibarra@unimayor.edu.co)</a>
+            </li>
+          </ul>
+        </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <hr>
+
+  <!--definicion previa-->
+  <div class="card"
+    style="border: 20px solid #D8F0F2; background-color:#D8F0F2; font-family: serif; border-radius: 15px; overflow: hidden; margin-top:40px;">
+
+    <div class="card-header"
+      style="background-color:#F2B6C6; font-size:2rem; font-weight:bold; text-align:center; border-bottom: 4px solid #D8F0F2;">
+      Arquitectura Frontend (Desarrollo de Páginas Web)
+    </div>
+    <hr>
+
+    <div class="card-body" style="padding: 30px;">
+
+      <div style="background-color:#ffffff; padding:30px; border-radius:12px; border:8px solid #D8F0F2;">
+
+        <table style="width:100%; border-collapse:collapse; font-size:1.05rem;">
+
+          <tr>
+            <td style="width:25%; font-weight:bold; padding:15px; border-bottom:10px solid #D8F0F2;">
+              Definición
+            </td>
+            <td style="padding:15px; border-bottom:10px solid #D8F0F2; text-align:justify;">
+              La arquitectura frontend organiza cómo se construye y estructura la interfaz de usuario de una aplicación
+              web o página web.
+              Incluye la manera de manejar componentes, datos, navegación y comunicación con el backend para ofrecer una
+              experiencia eficiente, rápida y mantenible.
+            </td>
+          </tr>
+
+          <tr>
+            <td style="font-weight:bold; padding:15px; border-bottom:10px solid #D8F0F2;">
+              Importancia
+            </td>
+            <td style="padding:15px; border-bottom:10px solid #D8F0F2;">
+              <ul style="margin:0; padding-left:20px; line-height:1.6;">
+                <li>Garantiza una navegación rápida y fluida.</li>
+                <li>Facilita mantenimiento y escalabilidad del código.</li>
+                <li>Separa la presentación de la lógica del negocio.</li>
+                <li>Mejora la experiencia del usuario (UX).</li>
+                <li>Permite integrar servicios y APIs de manera organizada.</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="font-weight:bold; padding:15px; border-bottom:10px solid #D8F0F2;">
+              Características
+            </td>
+            <td style="padding:15px; border-bottom:10px solid #D8F0F2;">
+              <ul style="margin:0; padding-left:10px; line-height:1.6;">
+                <li>Separación de componentes y vistas.</li>
+                <li>Comunicación eficiente con APIs o backend.</li>
+                <li>Modularidad y reutilización de código.</li>
+                <li>Gestión de estado (variables y datos de la aplicación).</li>
+                <li>Compatibilidad con múltiples dispositivos y navegadores.</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="font-weight:bold; padding:10px;">
+              Función
+            </td>
+            <td style="padding:10px; text-align:justify;">
+              Organizar la interfaz y los componentes de la página web para que el usuario interactúe de manera rápida,
+              coherente y eficiente,
+              manteniendo la lógica separada del backend.
+            </td>
+          </tr>
+
+        </table>
+
+        <div style="margin-top:40px; text-align:center;">
+          <h3 style="font-weight:bold; margin-bottom:20px;">Esquema Representativo</h3>
+          <img src="IMAGEN/ARQUITECTURAFRONTED.jpeg"
+            style="width: 600px; height:auto; border:4px solid #BF2A70; border-radius:8px;">
+        </div>
+
+      </div>
+
+    </div>
+
+    <hr>
+  </div>
+
+  <!--acordeon-->
+    <a id="tiposArquitecturaFrontend"></a>
+    <div style="text-align:center; margin-top:20px;">
+      <h1 style="font-family:serif; color:#000000;">
+        <strong>Tipos de Arquitecturas Frontend</strong>
+      </h1>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushFrontend">
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseMVC" style="background-color:#F2B6C6; color:black; font-family:serif;">
+            <strong>MVC (Model-View-Controller)</strong>
+          </button>
+        </h2>
+        <div id="flush-collapseMVC" class="accordion-collapse collapse" data-bs-parent="#accordionFlushFrontend">
+          <div class="accordion-body">
+            La arquitectura MVC es <strong>un patrón de diseño que divide la aplicación en tres partes independientes: Modelo, Vista y Controlador.</strong>
+            <br>
+            <ul>
+              <li><strong>Modelo:</strong> Maneja los datos y la lógica de negocio.</li>
+              <li><strong>Vista:</strong> Muestra la información al usuario.</li>
+              <li><strong>Controlador:</strong> Gestiona las acciones del usuario y conecta el Modelo con la Vista.</li>
+            </ul>
+            Permite que el código sea más ordenado, fácil de mantener y probar. Por <strong>ejemplo</strong>, un formulario de registro donde los datos del usuario se validan en el controlador y se muestran en la vista.
+            <br>
+            <center>
+              <img src="IMAGEN/MODELO-VISTA-CONTROLADOR-FRON.png" width="400" height="300" style="border:4px solid #BF2A70;">
+            </center>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseMVVM" style="background-color:#F2B6C6; color:black; font-family:serif;">
+            <strong>MVVM (Model-View-ViewModel)</strong>
+          </button>
+        </h2>
+        <div id="flush-collapseMVVM" class="accordion-collapse collapse" data-bs-parent="#accordionFlushFrontend">
+          <div class="accordion-body">
+            La arquitectura MVVM es <strong>una variante de MVC que introduce un intermediario llamado ViewModel, encargado de sincronizar los datos entre el Modelo y la Vista.</strong>
+            <br>
+            <ul>
+              <li><strong>Modelo:</strong> Datos y lógica de negocio.</li>
+              <li><strong>Vista:</strong> Interfaz de usuario que refleja el estado del modelo.</li>
+              <li><strong>ViewModel:</strong> Gestiona la interacción y sincronización automática entre modelo y vista.</li>
+            </ul>
+            Facilita que los cambios en los datos se reflejen automáticamente en la interfaz. Por <strong>ejemplo</strong>, un panel de notificaciones que se actualiza en tiempo real sin recargar la página.
+            <center>
+              <img src="IMAGEN/MODELO-VISTA-VISTMODELOFRON.png" width="400" height="300" style="border:4px solid #BF2A70;">
+            </center>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFlux" style="background-color:#F2B6C6; color:black; font-family:serif;">
+            <strong>Flux / Redux</strong>
+          </button>
+        </h2>
+        <div id="flush-collapseFlux" class="accordion-collapse collapse" data-bs-parent="#accordionFlushFrontend">
+          <div class="accordion-body">
+            Flux y Redux son <strong>arquitecturas unidireccionales que centralizan el estado de la aplicación en un único store y gestionan los cambios de forma predecible.</strong>
+            <br>
+            <ul>
+              <li><strong>Store:</strong> Contiene todo el estado de la aplicación.</li>
+              <li><strong>Actions:</strong> Representan eventos o cambios que se desean realizar.</li>
+              <li><strong>Dispatcher:</strong> Envía las acciones al store para actualizar el estado.</li>
+              <li><strong>View:</strong> Se actualiza automáticamente con el estado del store.</li>
+            </ul>
+            Ideal para aplicaciones con muchos datos y componentes sincronizados. Por <strong>ejemplo</strong>, un carrito de compras donde el estado de los productos se refleja en todos los componentes al mismo tiempo.
+              <center>
+                <img src="IMAGEN/FLEDUX-REDUX.png" width="400" height="300"  style="border:4px solid #BF2A70;">
+              </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseMonolitico" style="background-color:#F2B6C6; color:black; font-family:serif;">
+            <strong>Arquitectura Monolítica Frontend</strong>
+          </button>
+        </h2>
+        <div id="flush-collapseMonolitico" class="accordion-collapse collapse" data-bs-parent="#accordionFlushFrontend">
+          <div class="accordion-body">
+            La arquitectura monolítica es <strong>un modelo de desarrollo en el que todo el frontend se aloja en un único bloque de código.</strong>
+            <br>
+            <ul>
+              <li>HTML, CSS y JavaScript integrados en un solo proyecto.</li>
+              <li>Todas las páginas y componentes se gestionan juntos.</li>
+              <li>Depuración simple en proyectos pequeños.</li>
+            </ul>
+            Es fácil de iniciar, pero en proyectos grandes puede volverse difícil de mantener. Por <strong>ejemplo</strong>, una web estática donde todo el contenido y las interacciones ocurren en los mismos archivos.
+            <center>
+              <img src="IMAGEN/ARQUITECTURA-MONOLITICA-FRONT.png" width="400" height="300"  style="border:4px solid #BF2A70;">
+            </center>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseModular" style="background-color:#F2B6C6; color:black; font-family:serif;">
+            <strong>Arquitectura Modular Simple</strong>
+          </button>
+        </h2>
+        <div id="flush-collapseModular" class="accordion-collapse collapse" data-bs-parent="#accordionFlushFrontend">
+          <div class="accordion-body">
+            La arquitectura modular simple es <strong>un enfoque que divide el frontend en módulos independientes, cada uno con su propia lógica, componentes y estilos.</strong>
+            <br>
+            <ul>
+              <li>Módulos reutilizables.</li>
+              <li>Componentes y páginas separados.</li>
+              <li>Facilita el mantenimiento y la colaboración entre equipos.</li>
+            </ul>
+            Permite escalar la aplicación sin mezclar responsabilidades. Por <strong>ejemplo</strong>, una tienda online donde el catálogo, el carrito y los filtros son módulos separados.
+            <center>
+              <img src="IMAGEN/ARQUITECTURA-MODULAR.png" width="400" height="300" style="border:4px solid #BF2A70;">
+            </center>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <hr>
+
+  <!--enlace de la base de datos-->
+    <div>
+      <h2 style="font-family: 'Times New Roman', Times, serif;"><i>Bases de datos</i></h2>
+      <h5 style="font-family: serif;">
+        <i>Recuerda visitar nuestra base de datos UNIMAYOR para mayor informacion: 
+          <a href="https://unimayor.edu.co/web/biblioteca" target="_blank">Biblioteca</a>
+        </i>
+        <hr>
+        <i>Recuerda visitar informacion academica como GOOGLE ACADEMICO: 
+          <a href="https://scholar.google.com/?hl=es"target="_blank">Google academico</a>
+        </i>
+      </h5>
+    </div>
+
+  <!--pie de pagina-->
+    <div style="background-color:#F2B6C6; margin-top:40px; border-top:6px solid #D8F0F2; font-family:serif;">
+
+      <div class="container py-4">
+
+        <div class="row text-center text-md-start">
+
+          <!-- Informacion academica -->
+          <div class="col-md-6 mb-3">
+            <h5 style="font-weight:bold;">Sobre la autora</h5>
+            <p style="margin:0;">
+              <strong>Karol Tatiana Ibarra</strong><br>
+              Estudiante de quinto semestre de Desarrollo de Software.
+            </p>
+          </div>
+
+          <!-- Contacto -->
+          <div class="col-md-6 mb-3">
+            <h5 style="font-weight:bold;">Contacto</h5>
+
+            <!-- Enlace directo al correo -->
+            <p style="margin:0;">
+              <a href="mailto:kt.ibarra@unimayor.edu.co" style="text-decoration:none; color:inherit;">
+                kt.ibarra@unimayor.edu.co
+              </a>
+            </p>
+
+            <!-- Enlace directo al teléfono -->
+            <p style="margin:0;">
+              <a href="tel:+573169195728" style="text-decoration:none; color:inherit;">
+                316 919 5728
+              </a>
+            </p>
+          </div>
+        </div>
+        <hr style="border-color:#000000;">
+
+        <!-- Linea inferior -->
+        <div class="text-center">
+          <p style="margin:0; font-size:0.95rem;">
+            © 2026 Proyecto Académico – Arquitectura Web y Arquitectura Frontend.
+            <br>
+            <marquee>Diseño desarrollado con Bootstrap 5 y HTML basico.</marquee>:
+          </p>
+        </div>
+      </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

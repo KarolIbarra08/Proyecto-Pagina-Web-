@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Y CSS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+</head>
+
+<body>
+  <header>
+    <h1>Tutorial HTML5 y CSS</h1>
+    <br>
+    <h2>En el siguiente apartado observaras las diferentes propiedades de CSS</h2>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="BORDES.HTML">Bordes</a></li>
+      <li><a href="SOMBRAS.HTML">Sombras</a></li>
+      <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+      <li><a href="POSICION.HTML">Posicion</a></li>
+      <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+      <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+      <li><a href="FRAME.HTML">Frame</a></li>
+      <li><a href="COLUMNA.HTML">Columna</a></li>
+      <li><a href="VIDEO.HTML">Video</a></li>
+      <li><a href="AUDIO.HTML">Audio</a></li>
+      <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+      <li><a href="ANIMACION.HTML">Animacion</a></li>
+      <li><a href="SVG.HTML">SVG</a></li>
+      <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+      <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+      <li><a href="STORAGE.HTML">Storage</a></li>
+
+    </ul>
+  </nav>
+  <hr>
+  <!-- BOTÓN PARA ABRIR SIDEBAR -->
+  <input type="checkbox" id="toggle-sidebar" hidden>
+  <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+  <!-- SIDEBAR -->
+  <aside id="aside-informativo">
+    <label for="toggle-sidebar" id="btn-close">&times;</label>
+    <br>
+    <br>
+    <br>
+    <h3>Información Complementaria</h3>
+    <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+    <h4>Enlaces útiles</h4>
+    <ul>
+      <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+      <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+      <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+    </ul>
+
+    <h4>Contacto</h4>
+    <ul>
+      <li>📞 3169195728</li>
+      <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+    </ul>
+  </aside>
+
+  <!-- CARRUSEL -->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="../IMAGEN/BANNER1.png" class="d-block w-100" alt="Banner 1">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../IMAGEN/BANNER2.png" class="d-block w-100" alt="Banner 2">
+      </div>
+      <div class="carousel-item">
+        <img src="../IMAGEN/BANNER3.png" class="d-block w-100" alt="Banner 3">
+      </div>
+    </div>
+    <!-- Controles del carrusel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <hr>
+
+
+  <!-- SECCIÓN -->
+  <section id="tecnologias">
+
+    <header>
+      <h1>Tipos de tecnologías web</h1>
+    </header>
+
+    <section class="accordion accordion-flush" id="accordionTecnologias">
+
+      <!-- ARTICLE HTML5 -->
+      <article class="accordion-item">
+
+        <header class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#html5">
+
+            HTML5
+
+          </button>
+        </header>
+
+        <section id="html5" class="accordion-collapse collapse" data-bs-parent="#accordionTecnologias">
+
+          <div class="accordion-body">
+
+            <p>
+              HTML5 significa HyperText Markup Language versión 5. Es el lenguaje estándar que se usa para crear la
+              estructura de las páginas web.
+            </p>
+
+            <h3>Características</h3>
+
+            <ul>
+              <li>Usa etiquetas semánticas como header, section, article, footer.</li>
+              <li>Permite integrar audio y video.</li>
+              <li>Es compatible con dispositivos móviles.</li>
+              <li>Permite usar formularios más avanzados.</li>
+              <li>Funciona junto con CSS y JavaScript.</li>
+            </ul>
+
+            <h3>Importancia</h3>
+
+            <ul>
+              <li>Es la base de todas las páginas web.</li>
+              <li>Mejora la organización del contenido.</li>
+              <li>Permite crear sitios más modernos e interactivos.</li>
+              <li>Facilita el posicionamiento en buscadores (SEO).</li>
+            </ul>
+
+            <!-- NUEVA SECCIÓN -->
+
+            <h3>Estructura Semántica Principal</h3>
+
+            <p>
+              Las etiquetas semánticas ayudan a definir claramente la estructura de una página web,
+              permitiendo que los navegadores, buscadores y lectores de pantalla comprendan mejor el contenido.
+            </p>
+
+            <ul>
+
+              <li>
+                <strong>&lt;header&gt;</strong>: Define el encabezado de una página o sección.
+                Normalmente contiene el logo, el título o el menú de navegación.
+              </li>
+
+              <li>
+                <strong>&lt;nav&gt;</strong>: Contiene los enlaces de navegación del sitio.
+                Ayuda a los usuarios y a los lectores de pantalla a moverse entre las páginas.
+              </li>
+
+              <li>
+                <strong>&lt;main&gt;</strong>: Representa el contenido principal del documento.
+                Solo debe existir uno por página.
+              </li>
+
+              <li>
+                <strong>&lt;section&gt;</strong>: Agrupa contenido relacionado que comparte una misma temática.
+              </li>
+
+              <li>
+                <strong>&lt;article&gt;</strong>: Se usa para contenido independiente como noticias,
+                entradas de blog o publicaciones.
+              </li>
+
+              <li>
+                <strong>&lt;aside&gt;</strong>: Contenido relacionado indirectamente como barras laterales,
+                publicidad o enlaces adicionales.
+              </li>
+
+              <li>
+                <strong>&lt;footer&gt;</strong>: Define el pie de página que contiene información como
+                autor, derechos de autor, contacto o redes sociales.
+              </li>
+
+            </ul>
+
+            <figure>
+              <img src="/IMAGEN/HTTLM-5.png" alt="HTML5">
+            </figure>
+
+          </div>
+        </section>
+
+      </article>
+
+
+
+
+      <!-- ARTICLE CSS -->
+      <article class="accordion-item">
+
+        <header class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#css">
+
+            CSS
+
+          </button>
+        </header>
+
+        <section id="css" class="accordion-collapse collapse" data-bs-parent="#accordionTecnologias">
+
+          <div class="accordion-body">
+
+            <p>
+              CSS significa Cascading Style Sheets (Hojas de Estilo en Cascada).
+              Es el lenguaje que se usa para dar diseño y apariencia a una página web creada con
+            </p>
+
+            <h3>Características</h3>
+
+            <ul>
+              <li>Permite cambiar colores, fuentes y tamaños.</li>
+              <li>Controla el diseño y la posición de los elementos.</li>
+              <li>Usa selectores para aplicar estilos.</li>
+              <li>Permite animaciones y efectos visuales</li>
+              <li>Se puede reutilizar en varias páginas.</li>
+            </ul>
+
+            <h3>Importancia</h3>
+            <ul>
+              <li>Hace que las páginas web sean visualmente atractivas.</li>
+              <li>Separa el diseño del contenido.</li>
+              <li>Permite crear sitios web más organizados y profesionales.</li>
+              <li>Mejora la experiencia del usuario.</li>
+            </ul>
+
+
+            <figure>
+              <img src="/IMAGEN/CSS.png" alt="CSS">
+            </figure>
+
+          </div>
+        </section>
+      </article>
+
+      <!-- ARTICLE RELACIÓN HTML Y CSS -->
+      <article class="accordion-item">
+
+        <header class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#relacion">
+
+            Relación entre HTML5 y CSS
+
+          </button>
+        </header>
+
+        <section id="relacion" class="accordion-collapse collapse" data-bs-parent="#accordionTecnologias">
+
+          <div class="accordion-body">
+
+            <p>
+              HTML5 y CSS trabajan juntos para crear páginas web completas.
+              HTML5 se encarga de la <strong>estructura del contenido</strong>, mientras que
+              CSS se encarga del <strong>diseño y la apariencia visual</strong>.
+            </p>
+
+            <h3>¿Cómo trabajan juntos?</h3>
+
+            <ul>
+              <li>HTML5 crea títulos, párrafos, imágenes y secciones.</li>
+              <li>CSS aplica colores, tamaños y posiciones.</li>
+              <li>Permite que el contenido tenga un diseño atractivo.</li>
+              <li>Juntos crean páginas modernas y adaptables.</li>
+            </ul>
+
+            <h3>Ejemplo sencillo</h3>
+
+            <pre>
+            &lt;h1&gt;Hola Mundo&lt;/h1&gt;
+            </pre>
+
+            <pre>
+            h1{
+            color: blue;
+            text-align: center;
+            }
+            </pre>
+
+            <figure>
+              <img src="/IMAGEN/HTMLYCSS.jpg" alt="Relación HTML y CSS">
+            </figure>
+
+          </div>
+        </section>
+
+      </article>
+
+    </section>
+  </section>
+
+  <!--ASIDE-->
+  <!-- ASIDE INDEPENDIENTE -->
+  <aside id="aside-informativo">
+    <h3>Información Complementaria</h3>
+    <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+    <h4>Enlaces útiles</h4>
+    <ul>
+      <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+      <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+      <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+    </ul>
+
+    <h4>Contacto</h4>
+    <ul>
+      <li>📞 3169195728</li>
+      <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+    </ul>
+  </aside>
+
+  <!-- FOOTER-->
+  <footer class="footer">
+    <div class="footer-container">
+      <h3>Karol Tatiana Ibarra Narvaez</h3>
+      <p>Desarrolladora de Software</p>
+      <ul class="contact-info">
+        <li>📞 Tel: 3169195728</li>
+        <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+        <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+      </ul>
+    </div>
+    <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

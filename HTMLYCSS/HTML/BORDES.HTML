@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes y Lineas </title>
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+    <link rel="stylesheet" href="/CSS/BORDES.CSS">
+</head>
+
+<body>
+    <header>
+        <h1>Bordes Redondeados y Lineas en CSS</h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li>📞 3169195728</li>
+            <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+
+        <!--SECTION-->
+    <section id="contenedor-bordes">
+
+            <article id="bordes-intro">
+            <header>
+                <h1>Bordes y bordes redondeados</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li>Líneas separadoras horizontales</li>
+                    <li>Líneas separadoras verticales</li>
+                    <li>Bordes simples</li>
+                    <li>Bordes redondeados</li>
+                </ul>
+                <p>
+                  En CSS, los bordes redondeados son una propiedad que permite que las esquinas de un elemento no sean rectas sino curvas mediante <code>border-radius</code>, lo que mejora la apariencia de cajas, imágenes o botones. Por otro lado, las líneas se utilizan para separar o decorar contenido en una página web y se pueden crear con la etiqueta <code>hr</code> de HTML5 o con propiedades de borde como <code>border</code>.
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+  
+        <!-- LINEAS HORIZONTALES -->
+            <article id="seccion-horizontales">
+
+                <header>
+                    <h2>Líneas separadoras horizontales</h2>
+                </header>
+
+                <p>
+                    Para crear una línea horizontal la forma fácil y rápida es utilizar la etiqueta
+                    <code>&lt;hr&gt;</code>.
+                </p>
+
+                <ul>
+                    <li><code>border-width</code> (grosor)</li>
+                    <li><code>width</code> (anchura)</li>
+                    <li><code>border-color</code> (color)</li>
+                    <li><code>border-style</code> (tipo de línea)</li>
+                </ul>
+
+                <div class="ejemplo-codigo">
+
+                    <p><strong>Ejemplo de selector CSS para una línea específica:</strong></p>
+
+                    <pre>
+                    #linea1{
+                    border-width:4px;
+                    border-style:dotted;
+                    border-color:blue;
+                    width:50%;
+                    }
+                    </pre>
+
+                </div>
+
+                <div class="ejemplo">
+                    <p><strong>Resultado:</strong></p>
+                    <hr id="linea1">
+                </div>
+
+            </article>
+     
+
+         <!-- LINEAS VERTICALES -->
+
+        <article id="seccion-verticales">
+
+            <header>
+                <h2>Líneas separadoras verticales</h2>
+            </header>
+
+            <p>
+                Para crear líneas verticales definimos uno de los bordes de una caja
+                <code>&lt;div&gt;</code>.
+            </p>
+
+            <ul>
+                <li><code>border-right</code></li>
+                <li><code>border-left</code></li>
+            </ul>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de línea vertical:</strong></p>
+
+                <pre>
+                .linea-vertical{
+                height:80px;
+                border-right:4px dashed #3C5391;
+                }
+                </pre>
+
+            </div>
+
+            <div class="ejemplo">
+
+                <p><strong>Resultado:</strong></p>
+
+                <div class="linea-vertical"></div>
+
+            </div>
+
+        </article>
+
+        <!-- BORDES SIMPLES -->
+ 
+        <article id="seccion-bordes-simples">
+
+            <header>
+                <h2>Bordes simples</h2>
+            </header>
+
+            <p>
+                Podemos aplicar bordes a cualquier elemento utilizando la propiedad
+                <code>border</code>.
+            </p>
+
+            <p>Tipos de bordes:</p>
+
+            <ul>
+                <li><strong>none</strong>: sin línea</li>
+                <li><strong>solid</strong>: línea continua</li>
+                <li><strong>dotted</strong>: línea punteada</li>
+                <li><strong>dashed</strong>: línea discontinua</li>
+                <li><strong>inset</strong>: bajorelieve</li>
+                <li><strong>outset</strong>: relieve</li>
+            </ul>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo CSS de diferentes bordes:</strong></p>
+
+                <pre>
+                .borde-none{
+                border:3px none black;
+                }
+
+                .borde-solid{
+                border:3px solid black;
+                }
+
+                .borde-dotted{
+                border:3px dotted red;
+                }
+
+                .borde-dashed{
+                border:3px dashed blue;
+                }
+
+                .borde-inset{
+                border:5px inset gray;
+                }
+
+                .borde-outset{
+                border:5px outset green;
+                }
+                </pre>
+
+            </div>
+
+            <div class="ejemplo">
+
+                <p><strong>Resultado:</strong></p>
+
+                <div class="borde-none">none</div>
+
+                <div class="borde-solid">solid</div>
+
+                <div class="borde-dotted">dotted</div>
+
+                <div class="borde-dashed">dashed</div>
+
+                <div class="borde-inset">inset</div>
+
+                <div class="borde-outset">outset</div>
+
+            </div>
+
+        </article>
+
+        <!-- BORDES REDONDEADOS -->
+      
+        <article id="seccion-redondeados">
+
+            <header>
+                <h2>Bordes redondeados</h2>
+            </header>
+
+            <p>
+                Con la propiedad <code>border-radius</code> suavizamos las esquinas.
+            </p>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de bordes redondeados:</strong></p>
+
+                <pre>
+                #apartado1{
+                width:250px;
+                height:100px;
+                border:3px solid brown;
+                border-radius:22px;
+                }
+
+                #apartado-mixto{
+                width:250px;
+                height:100px;
+                border:3px solid #3C5391;
+                border-radius:10px 0px 39px 22px;
+                }
+                </pre>
+
+            </div>
+
+            <div class="ejemplo">
+
+                <p><strong>Resultado:</strong></p>
+
+                <div id="apartado1">
+                    border-radius:22px
+                </div>
+
+                <br>
+
+                <div id="apartado-mixto">
+                    border-radius:10px 0px 39px 22px
+                </div>
+
+            </div>
+
+        </article>
+  
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li>📞 Tel: 3169195728</li>
+                <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+
+    
+</body>
+
+</html>

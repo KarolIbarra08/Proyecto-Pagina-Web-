@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios </title>
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+    <link rel="stylesheet" href="/CSS/FORMULARIOS.CSS">
+</head>
+
+<body>
+    <header>
+        <h1>Formularios</h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li>📞 3169195728</li>
+            <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+    <!-- SECTION -->
+    <section id="contenedor-bordes">
+
+        <!-- INTRODUCCIÓN -->
+        <article id="bordes-intro">
+            <header>
+                <h1>Formularios</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li>Etiquetas de formularios</li>
+                    <li>Otras etiquetas o inputs existentes</li>
+                    <li>Resumen resumido de los nuevos atributos</li>
+                    <li>Estilos CSS y autovalidación visual</li>
+                </ul>
+                <p>
+                    Un formulario es un conjunto de campos (como cajas de texto, botones, listas desplegables, casillas
+                    de verificación, etc.) que permiten al usuario ingresar y enviar datos a un servidor o procesarlos
+                    en la página.
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+
+        <!-- ETIQUETAS DE FORMULARIOS -->
+        <article id="formularioEtiquetas">
+            <header>
+                <h2>Etiquetas de Formularios</h2>
+            </header>
+
+            <p>
+                Todas las etiquetas del formulario deben estar ubicadas dentro de las etiquetas &lt;form&gt;.
+            </p>
+
+            <ul>
+                <li>Nombre</li>
+                <li>Correo</li>
+                <li>Contraseña</li>
+                <li>Fecha de nacimiento</li>
+                <li>Rango</li>
+                <li>Color</li>
+                <li>Número</li>
+                <li>Enviar</li>
+            </ul>
+        </article>
+
+        <!-- EJEMPLO PRÁCTICO -->
+        <article id="ejemplo-practico">
+            <header>
+                <h2>Ejemplo de Formulario Completo</h2>
+            </header>
+
+            <p>
+                A continuación se muestra un formulario que combina todos los tipos de input vistos: texto, contraseña,
+                email, fecha, rango, color, número y botón enviar.
+            </p>
+
+            <div class="ejemplo-codigo">
+                <p><strong>Formulario completo:</strong></p>
+                <pre>
+            &lt;form&gt;
+
+            &lt;!-- Nombre --&gt;
+            &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+            &lt;input type="text" 
+            id="nombre" 
+            name="nombre" 
+            size="40" 
+            title="Escribe tu nombre real. Es el que aparecerá en tu perfil." 
+            autofocus 
+            required /&gt;
+
+            &lt;!-- Contraseña --&gt;
+            &lt;label for="password"&gt;Contraseña:&lt;/label&gt;
+            &lt;input type="password" 
+            id="password" 
+            name="password" 
+            size="7" 
+            title="Escribe la contraseña que desees..." 
+            required /&gt;
+
+            &lt;!-- Correo Electrónico --&gt;
+            &lt;label for="mail"&gt;Correo:&lt;/label&gt;
+            &lt;input type="email" 
+            id="mail" 
+            name="mail" 
+            size="40" 
+            placeholder="usuario@dominio.com" 
+            title="Escribe tu correo electrónico..." 
+            required /&gt;
+
+            &lt;!-- Fecha de Nacimiento --&gt;
+            &lt;label for="nacimiento"&gt;Fecha de nacimiento:&lt;/label&gt;
+            &lt;input type="date" 
+            id="nacimiento"
+            name="nacimiento" 
+            value="2000-01-01"
+            title="La fecha en la que naciste, ya que..."/&gt;
+
+            &lt;!-- Rango --&gt;
+            &lt;label for="adiccion"&gt;¿Cuántos cómics de Flash Gordon lees a la semana?:&lt;/label&gt;
+            &lt;input type="range" 
+            id="adiccion"
+            name="adiccion"
+            min="1"
+            max="7"
+            value="2"
+            step="1"
+            title="Necesitamos saber..." /&gt;
+
+            &lt;!-- Color --&gt;
+            &lt;label for="color_preferido"&gt;Color favorito de las mayas de Flash Gordon:&lt;/label&gt;
+            &lt;input type="color" 
+            id="color_preferido"
+            name="color_preferido"
+            value="#FF0000"
+            title="Con esta votación..." /&gt;
+
+            &lt;!-- Número --&gt;
+            &lt;label for="comics"&gt;¿Cuántos cómics de Flash Gordon tienes actualmente?:&lt;/label&gt;
+            &lt;input type="number" 
+            id="comics"
+            name="comics"
+            min="100"
+            max="9000"
+            value="100"
+            step="1"
+            title="De momento el ganador..." /&gt;
+
+            &lt;!-- Enviar --&gt;
+            &lt;input type="submit" value="Enviar los datos" /&gt;
+
+            &lt;/form&gt;
+            </pre>
+            <br>
+            <ul>
+                <li><strong>Texto:</strong>Campo para ingresar texto. size define su longitud, title muestra un mensaje al pasar el cursor, name identifica el dato al enviar el formulario, autofocus selecciona el campo por defecto y required lo hace obligatorio.</li>
+                <li><strong>Contraseña:</strong>El texto ingresado se oculta. También puede ser obligatorio con required.</li>
+                <li><strong>Correo electronico:</strong>Valida automáticamente el formato de correo. placeholder muestra un texto inicial que desaparece al escribir. required lo hace obligatorio.</li>
+                <li><strong>Fecha:</strong>Permite seleccionar una fecha mediante calendario. value define la fecha inicial por defecto.</li>
+                <li><strong>Rango:</strong>Barra deslizante para elegir un valor numérico entre min y max. step define el incremento y value el valor inicial.</li>
+                <li><strong>Color:</strong>Selector de color con valor inicial definido por value en hexadecimal.</li>
+                <li><strong>Numero:</strong>ermite ingresar valores numéricos dentro de un rango (min, max). step define el incremento y value el valor inicial.</li>
+                <li><strong>Enviar:</strong>Botón que envía los datos del formulario. El texto del botón se define con value.</li>
+            </ul> 
+            </div>
+            <br>
+
+                <!-- BLOQUE DE EJEMPLO VISUAL -->
+        <div class="ejemplo">
+            <p><strong>Resultado visual:</strong></p>
+
+            <div id="etiquetaFormulario">
+                <form id="form-visual">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" autofocus required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" placeholder="Escribe tu contraseña" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mail">Correo:</label>
+                        <input type="email" id="mail" name="mail" placeholder="usuario@dominio.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nacimiento">Fecha de nacimiento:</label>
+                        <input type="date" id="nacimiento" name="nacimiento" value="2000-01-01">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="adiccion">¿Cuántos cómics lees a la semana?:</label>
+                        <input type="range" id="adiccion" name="adiccion" min="1" max="7" value="2">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="color_preferido">Color favorito:</label>
+                        <input type="color" id="color_preferido" name="color_preferido" value="#FF0000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comics">Cantidad de cómics:</label>
+                        <input type="number" id="comics" name="comics" min="100" max="9000" value="100">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Enviar los datos">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </article>
+
+    <!-- BOTONES E IMPUT -->
+      
+    <article id="botonesImmput">
+
+            <header>
+                <h2> Otras etiquetas o inputs existentes</h2>
+            </header>
+
+            <p>
+              Existen múltiples tipos de input type, como son:
+            </p>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo en CSS de sombras:</strong></p>
+                <p><strong>Button:</strong>
+                     Crea un botón 'vacío'. La acción que se ejecutará cuando el usuario haga clic en él. La acción a ejecutar se tendrá que añadir posteriormente con JavaScript indicando su nombre de id.
+                </p>
+                <pre>
+                &lt;input type="button" value="Vótame" id="boton1"/&gt;
+                </pre>
+                <br>
+
+                <p><strong>Checkbox:</strong>
+                     Crea cuadros de selección en el que se puede seleccionar más de un valor. Como es posible marcar múltiples checkbox, cada uno tiene que tener un name diferente.
+                </p>
+                <pre>
+                &lt;input type="checkbox" name="destino1" value="Damasco" /&gt; Damasco (Siria)
+                &lt;input type="checkbox" name="destino2" value="Kabul" checked /&gt; Kabul (Afganistán)
+                &lt;input type="checkbox" name="destino3" value="Belgrado" /&gt; Belgrado (Serbia)
+                </pre>
+                <br>
+
+                <p><strong>File:</strong>
+                 Permite que el usuario pueda seleccionar un fichero de su disco duro. Además, es posible indicar un filtro para poder seleccionar únicamente un tipo de fichero determinado. (Posteriormente para subirlo al servidor o realizar cualquier otra acción con dicho fichero se tendrá que recurrir a JavaScript).
+                </p>
+                <pre>
+                &lt;input type="file" name="fichero" accept="image/*" /&gt;
+                </pre>
+                <br>
+
+                <p><strong>Radio:</strong>
+                Crea círculos de selección en el que únicamente se puede seleccionar uno de ellos. Todos los radio button tienen que tener el mismo valor en name.
+                </p>
+                <pre>
+                &lt;input type="radio" name="sexo" value="Mujer" checked /&gt; Mujer
+                &lt;input type="radio" name="sexo" value="Hombre" /&gt; Hombre y sus derivados
+                &lt;input type="radio" name="sexo" value="NS/NC" /&gt; No estoy muy seguro/a
+                </pre>
+                <br>
+                
+                <p><strong>Tel:</strong>
+                Introduce un número de teléfono. Aunque este type no tiene autovalidación (se puede escribir lo que se desee) ofrece importante información al navegador del tipo de información a introducir. Así, navegadores en iPhone4 (iOs 4.2) o Android (HTC Desire) cuando reciben un type="tel" ofrecen un teclado numérico especial para facilitar la introducción de este tipo de información.
+                </p>
+                <pre>
+                &lt;input type="tel" name="telefono" /&gt;
+                </pre>
+                <br>
+
+                <p><strong>Tel:</strong>
+                Introduce un número de teléfono. Aunque este type no tiene autovalidación (se puede escribir lo que se desee) ofrece importante información al navegador del tipo de información a introducir. Así, navegadores en iPhone4 (iOs 4.2) o Android (HTC Desire) cuando reciben un type="tel" ofrecen un teclado numérico especial para facilitar la introducción de este tipo de información.
+                </p>
+                <pre>
+                &lt;input type="tel" name="telefono" /&gt;
+                </pre>
+                <br>
+            </div>
+
+        <!-- BLOQUE DE EJEMPLO VISUAL -->
+        <div class="ejemplo">
+        <p><strong>Resultado visual:</strong></p>
+
+        <div id="inputsVisual">
+            <form id="form-visual">
+                
+                <!-- BUTTON -->
+                <div class="form-group">
+                    <label for="boton1">Button:</label>
+                    <p>Crea un botón 'vacío'. La acción se añadirá posteriormente con JavaScript usando su id.</p>
+                    <input type="button" value="Vótame" id="boton1">
+                </div>
+
+                <!-- CHECKBOX -->
+                <div class="form-group">
+                    <label>Checkbox:</label>
+                    <p>Crea cuadros de selección donde se puede marcar más de un valor.</p>
+                    <label><input type="checkbox" name="destino1" value="Damasco"> Damasco (Siria)</label>
+                    <label><input type="checkbox" name="destino2" value="Kabul" checked> Kabul (Afganistán)</label>
+                    <label><input type="checkbox" name="destino3" value="Belgrado"> Belgrado (Serbia)</label>
+                </div>
+
+                <!-- FILE -->
+                <div class="form-group">
+                    <label for="fichero">File:</label>
+                    <p>Permite seleccionar un fichero de tu disco. Se puede filtrar por tipo de archivo.</p>
+                    <input type="file" name="fichero" accept="image/*">
+                </div>
+
+                <!-- RADIO -->
+                <div class="form-group">
+                    <label>Radio:</label>
+                    <p>Crea círculos de selección donde solo se puede elegir uno.</p>
+                    <label><input type="radio" name="sexo" value="Mujer" checked> Mujer</label>
+                    <label><input type="radio" name="sexo" value="Hombre"> Hombre y sus derivados</label>
+                    <label><input type="radio" name="sexo" value="NS/NC"> No estoy muy seguro/a</label>
+                </div>
+
+                <!-- TEL -->
+                <div class="form-group">
+                    <label for="telefono">Tel:</label>
+                    <p>Introduce un número de teléfono. No tiene autovalidación, pero algunos navegadores muestran teclado numérico.</p>
+                    <input type="tel" name="telefono" placeholder="+57 300 0000000">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </article>
+
+
+    <!-- BOTONES E IMPUT -->
+      
+    <article id="estilosAutovalidacion">
+
+            <header>
+                <h2> Estilos CSS y autovalidación visual</h2>
+            </header>
+
+            <p>
+              Con CSS3 podemos maquetar los inputs de los formularios para que sean más agradables a la vista y además ofrecer información visual para saber qué campos tienen valores válidos y qué valores son incorrectos o bien son obligatorios y que por lo tanto deben ser rellenados.
+            </p>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo en CSS de sombras:</strong></p>
+                <p><strong>Maquetación CSS:</strong>
+                Para maquetar y dar un estilo determinado al formulario podemos utilizar los selectores referentes a cada uno de los elementos que componen el formulario form, input, fieldset, legend, label...
+                </p>
+                <pre>
+                form{
+                background-color:orange;
+                color:black;
+                }
+                input{
+                color:grey;
+                }
+                fieldset{
+                border-radius:5px;
+                border:1px dotted green;
+                }
+                </pre>
+                <br>
+
+                <p><strong>Autovalidacion:</strong>
+                Para que el formulario pueda resaltar visualmente qué campos obligatorios es necesario rellenar, que campos son válidos o qué campos tienen valores incorrectos utilizamos el selector :invalid, mientras que el selector [required]{ señala aquellos campos que son obligatorios y que los valores introducidos son correctos y :valid se encarga de gestionar aquellos campos que son correctos.
+                </p>
+                <pre>
+                input[required]{
+                border-color:blue;
+                box-shadow:0px 0px 5px blue;
+                }
+                input:invalid{
+                border-color:red;
+                box-shadow:0px 0px 5px blue;
+                }
+                input:valid{
+                border-color:green;
+                box-shadow:0px 0px 5px green;
+                }
+                </pre>
+            <br>
+        </div>
+
+         <!-- BLOQUE DE EJEMPLO VISUAL -->
+    <div class="ejemplo">
+        <p><strong>Resultado visual:</strong></p>
+
+        <div id="inputsVisual">
+            <form id="form-visual">
+
+                <!-- NOMBRE -->
+                <div class="form-group">
+                    <label for="nombre">Nombre (obligatorio):</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="form-group">
+                    <label for="email">Correo electrónico (obligatorio):</label>
+                    <input type="email" id="email" name="email" placeholder="usuario@dominio.com" required>
+                </div>
+
+                <!-- TEL -->
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+57 300 0000000">
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</article>
+
+
+</section>
+
+
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li>📞 Tel: 3169195728</li>
+                <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

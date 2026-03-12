@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+    <link rel="stylesheet" href="/CSS/RESPONSIVE.CSS">
+</head>
+
+<body>
+    <header>
+        <h1>Responisve</h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li>📞 3169195728</li>
+            <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+    <!--SECTION-->
+    <section id="contenedor-bordes">
+
+            <article id="bordes-intro">
+            <header>
+                <h1>Responsive</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li>Multiples Resoluciones</li>
+                    <li>Funcionamiento de las Mediaqueries</li>
+                    <li>Sintaxis</li>
+                    <li>Exclusivo para móviles y tablets</li>
+                </ul>
+                <p>
+                En CSS, los responsive (o diseño responsivo) se refieren a la técnica de adaptar una página web para que se vea y funcione correctamente en diferentes tamaños de pantalla, como celulares , 
+                tables o computadoras
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+  
+        <!--MULTIPLES RESOLUCIONES -->
+            <article id="multiplesResoluciones">
+
+                <header>
+                    <h2>Multiples Resoluciones</h2>
+                </header>
+
+                <p>
+                Los llamados media queries son una serie de funciones que incorpora CSS3 para que las páginas web se adapten "racionalmente" o adopten una maquetación diferente según la resolución en la que se muestre la página web, ya sea en navegadores que funcionan sobre ordenadores con grandes monitores, sobre tablets, móviles o incluso displays de neveras, yogurteras, coches o lavadoras conectadas a Internet.
+                <br>
+
+                <p>Hace algunos años las resoluciones de pantalla eran fáciles de controlar, pero hoy existen muchos dispositivos con diferentes tamaños. Por eso se agrupan las resoluciones en grupos estándar 
+                    para facilitar el diseño responsive en la cual son las siguientes resoluciones:</p>
+                <ul>
+                    <li>Resoluciones iguales o menores de 480 píxeles: para móviles</li>
+                    <li>Resoluciones de 481px a 768 píxeles: para tablets</li>
+                    <li>Resoluciones mayores de 768 píxeles: para ordenadores ¿Dónde colocarlos?</li>
+                </ul>
+                <br>
+                <p>Se deben de seguir los siguientes pasos:</p>
+                <br>
+                <ol>
+                    <li>Primero colocamos todos los selectores habituales de la página, ya sea dentro del <head> o bien dentro un archivo CSS externo.</li>
+                    <li>Después de todos los selectores CSS habituales se colocan los mediaqueries con sus selectores CSS dentro.</li>
+                </ol>
+
+                <div class="ejemplo-codigo">
+                <pre>
+                &lt;head&gt;	
+                &lt;style type="text/css"&gt;
+
+                body{
+                    background-color:white;
+                    font-size:14px;
+                }	
+
+                #bloque1{
+                    font-size:15px;
+                }
+
+                @media only screen and (max-width:320px){
+                    body{
+                    background-color:red;
+                    }
+                    #bloque1{
+                    font-size:12px;
+                    }
+                }
+
+                &lt;/style&gt;
+                &lt;/head&gt;
+                </pre>
+                </div>
+        </article>
+
+        <!-- FUNCIONAMIENTO MEDIQUERES -->
+            <article id="funcionamientoMediqueres">
+
+                <header>
+                    <h2>Funcionamiento Mediqueres</h2>
+                </header>
+                <br>
+                <p>
+                    Un mediaquerie agrupa diferentes selectores CSS e identifica en qué condiciones se deben ejecutar dichos selectores. Normalmente estas condiciones están relacionadas con la resolución horizontal del dispositivo donde se está visualizando la página web.
+                </p>
+           </article> 
+
+            <!-- SINTAXIS -->
+            <article id="sintaxis">
+
+                <header>
+                    <h2>Sintaxis</h2>
+                </header>
+                <br>
+                <p>Se obtiene la siguiente sintaxis:</p>
+                <div class="ejemplo-codigo">
+                <pre>
+                @media only screen and (max-width:320px){
+                <!--Este mediaquerie se ejecutará sólo cuando la resolución horizontal sea menor de 320 píxeles-->
+                }
+
+                @media only screen and (min-width:980px){
+                <!--Este mediaquerie se ejecutará sólo cuando la resolución horizontal sea mayor de 980 píxeles-->
+                }
+                </pre>
+                <ul>
+                    <li>max-width: Equivale a la traducción "cuando la resolución horizontal sea menor que la indicada...".</li>
+                    <li>min-width: Equivale a la traducción "cuando la resolución horizontal sea mayor que la indicada...".</li>
+                </ul>
+                <br>
+                <p>Ejemplo codigo final :</p>
+                <br>
+                <pre>
+                    @media only screen and (min-width:320px) and (max-width:480px){
+                    <!--Se ejecutará sólo cuando la resolución horizontal se encuentre entre 320 y 480 píxeles-->
+                    }
+                </pre>
+                </div>
+           </article> 
+
+             <!-- EXCLUSIVO PARA MOVILES Y TABLETS -->
+            <article id="movilesTablets">
+
+                <header>
+                    <h2>Exclusivo para Moviles y Tablets</h2>
+                </header>
+                <br>
+
+                <div class="ejemplo-codigo">
+                <p>
+                    En un móvil no tenemos una ventana del navegador que podamos redimensionar como ocurre con un ordenador, sino que toda la pantalla del móvil es utilizada como ventana del navegador.
+                    Para evitar estos problemas se realiza lo siguiente:
+                </p>
+                <pre>
+                @media only screen and (min-device-width:320px) and (max-device-width:480px){
+                <!--Se ejecutará sólo cuando la resolución horizontal se encuentre entre 320 y 480 píxeles-->
+                }
+                </pre>
+                <br>
+                <ul>
+                    <li>Añadiendo device podemos hacer referencia -no al ancho de la ventana del navegador (que no existe como tal)- sino a la anchura real del dispositivo.</li>
+                    <li>Para que el contenido no se escale automáticamente al visualizar una página web debemos utilizar un metadata que colocaremos dentro del <head> para configurar el viewport con varias propiedades y que únicamente funcionará para móviles y tablets:</li>
+                    <pre>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"&gt;
+                    </pre>
+                </ul>
+                <br>
+                <p>
+                    Al mismo tiempo con initial-scale=1 estamos configurando la escala inicial de visualización. Así, utilizando un valor de "1", el contenido se verá al 100% del tamaño (con "2" la escala inicial sería el doble, pudiéndose utilizar decimales "0.75", "1.25"...)
+
+                    Por último, podemos indicar el máximo grado de zoom que podrá hacer el usuario utilizando maximum-scale=2. En este ejemplo, con un valor de "2", se permite al usuario ampliar el contenido como máximo el doble de su tamaño original.
+                </p>
+                </div>
+
+                 <div class="ejemplo">
+
+                <p><strong>Resultado:</strong></p>
+
+                <div id="responsiveEjercicio">
+                    Cambia el tamaño de la ventana para ver el efecto Responsive
+                </div>
+
+            </div>
+           </article> 
+
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li>📞 Tel: 3169195728</li>
+                <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

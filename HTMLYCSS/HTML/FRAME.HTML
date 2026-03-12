@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRAME </title>
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+    <link rel="stylesheet" href="/CSS/FRAME.CSS">
+</head>
+
+<body>
+    <header>
+        <h1>Frame</h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li>📞 3169195728</li>
+            <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+    
+        <!--SECTION-->
+    <section id="contenedor-bordes">
+
+            <article id="bordes-intro">
+            <header>
+                <h1>Frame</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li>I-Frame</li>
+                    <li>Google Maps</li>
+                </ul>
+                <p>
+                En HTML y CSS, un iframe (Inline Frame) es un elemento que permite mostrar otra página web o contenido externo dentro de una página web.
+                Se utiliza para incrustar contenido como videos, mapas, documentos u otras páginas dentro de un espacio específico de la página.
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+  
+        <!-- IFRAME -->
+        <article id="iframe">
+
+            <header>
+                <h2>I-Frame</h2>
+            </header>
+
+            <p>
+                Es una etiqueta de HTML bastante antigua que permite añadir de una manera muy fácil y rápida
+                una página web o contenido dentro de otra página. Para ello únicamente hay que indicar la
+                dirección web del contenido o página HTML que quieres insertar y el espacio de la ventana
+                que mostrará dicho contenido.
+            </p>
+
+            <br>
+
+            <p>
+                Aunque en HTML5 existen alternativas a <strong>&lt;iframe&gt;</strong>, todavía se usa mucho
+                porque servicios como Google Maps o YouTube lo utilizan para insertar mapas o videos en
+                una página web. Solo es necesario copiar el código que dan estas páginas y pegarlo dentro
+                de un div, al que luego se le puede aplicar estilos con CSS.
+            </p>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de Frames:</strong></p>
+
+            <pre>
+            &lt;iframe width="640" height="510" src="http://www..." frameborder="0"&gt;
+            &lt;/iframe&gt;
+            </pre>
+
+                <br>
+
+                <ul>
+                    <li><strong>width</strong> y <strong>height</strong>: definen el tamaño de la ventana donde se mostrará el contenido.</li>
+                    <li><strong>frameborder</strong>: permite quitar o mostrar el borde del marco.</li>
+                    <li><strong>src</strong>: indica la página o contenido que se mostrará dentro del iframe.</li>
+                    <li>Para insertar un video de YouTube se explica en el tema de video del módulo 4.</li>
+                    <li>Para agregar un mapa de Google Maps, se explica en la siguiente sección.</li>
+                </ul>
+
+            </div>
+
+        </article>
+
+
+        <!-- GOOGLE MAPS -->
+        <article id="googleMapsArticulo">
+
+            <header>
+                <h2>Google Maps</h2>
+            </header>
+
+            <ul>
+                <li>Accedemos a Google Maps y buscamos la dirección que queremos mostrar.</li>
+                <li>Ajustamos el zoom según lo que queramos mostrar.</li>
+                <li>Seleccionamos la opción <strong>Compartir</strong> y luego <strong>Insertar mapa</strong>.</li>
+                <li>Elegimos el tamaño del mapa.</li>
+                <li>Copiamos el código iframe que nos proporciona Google Maps.</li>
+                <li>Lo pegamos dentro de un div para poder modificarlo posteriormente con CSS.</li>
+            </ul>
+
+            <br>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de código:</strong></p>
+
+            <pre>
+            &lt;iframe 
+            width="640" 
+            height="510" 
+            src="https://www.google.com/maps?q=Popayán&amp;output=embed" 
+            frameborder="0"&gt;
+            &lt;/iframe&gt;
+            </pre>
+
+            </div>
+
+            <div class="ejemplo">
+
+                <p><strong>Resultado:</strong></p>
+
+                <div class="mapa">
+                    <iframe
+                        width="640"
+                        height="510"
+                        src="https://www.google.com/maps?q=Popayán&output=embed"
+                        frameborder="0">
+                    </iframe>
+                </div>
+
+            </div>
+
+        </article>
+
+        </section>
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li>📞 Tel: 3169195728</li>
+                <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

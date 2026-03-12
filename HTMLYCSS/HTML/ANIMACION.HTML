@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones </title>
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+    <link rel="stylesheet" href="/CSS/ANIMACION.CSS">
+</head>
+
+<body>
+    <header>
+        <h1>Animaciones</h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li>📞 3169195728</li>
+            <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+    <!--SECTION-->
+    <section id="contenedor-bordes">
+
+            <article id="bordes-intro">
+            <header>
+                <h1>Animaciones</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li>Animaciones</li>
+                    <li>Compatibilidad con navegadores</li>
+                </ul>
+                <p>
+                En CSS Animations, una animación es una técnica que permite hacer que los elementos de una página web cambien de estilo gradualmente con el tiempo, sin necesidad de usar JavaScript. Esto se logra definiendo estados intermedios entre un estilo inicial y uno final.
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+  
+        <!--ANIMACION -->
+            <article id="animacion">
+
+                <header>
+                    <h2>Animacion</h2>
+                </header>
+
+                <p>
+                De una manera parecida a las transiciones, pero con una mayor potencialidad, en HTML5 tenemos a nuestra disposición las animaciones (animation).
+                </p>
+                <br>
+                <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de animacion:</strong></p>
+                <ol>
+                    <li>Creamos el objeto a animar</li>
+                <pre>
+                &lt;div id="martillo"&gt;
+                &lt;svg width="120" height="190" xmlns="http://www.w3.org/2000/svg"&gt;
+
+                    &lt;rect x="43" y="10" width="14" height="160" rx="6" ry="5" fill="#895111"/&gt;
+                    &lt;rect x="43" y="10" width="14" height="160" rx="6" ry="5" fill="#895111"/&gt;
+
+                    &lt;rect x="45" y="15" width="4" height="150" rx="6" ry="6" fill="#A68661"/&gt;
+
+                    &lt;rect x="10" y="22" width="80" height="45" rx="14" ry="12" fill="#6E6E5F"/&gt;
+                    &lt;rect x="20" y="37" width="62" height="24" rx="6" ry="6" fill="#898982"/&gt;
+                    &lt;rect x="20" y="25" width="62" height="6" rx="4" ry="4" fill="#C2C2B6"/&gt;
+
+                    &lt;rect x="43" y="67" width="14" height="9" fill="#482907"/&gt;
+
+                &lt;/svg&gt;
+                &lt;/div&gt;
+                </pre>
+                <li>Establecemos la animación y propiedades </li>
+                <pre>
+                    #martillo {
+                    animation:animacion_martillo 2s;
+                    }
+                </pre>
+                <br>
+
+                <table border="1">
+                <tr>
+                    <th>Propiedad</th>
+                    <th>Valor</th>
+                    <th>Descripción</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="5">animation-timing-function</td>
+                    <td>linear</td>
+                    <td>La velocidad es siempre la misma durante toda la animación.</td>
+                </tr>
+                <tr>
+                    <td>ease</td>
+                    <td>La animación comienza lenta, después rápida y acaba lenta.</td>
+                </tr>
+                <tr>
+                    <td>ease-in</td>
+                    <td>La animación empieza lenta y va acelerándose progresivamente.</td>
+                </tr>
+                <tr>
+                    <td>ease-out</td>
+                    <td>La animación empieza rápida y va decelerando progresivamente.</td>
+                </tr>
+                <tr>
+                    <td>ease-in-out</td>
+                    <td>La animación empieza y acaba lenta y en el centro va rápida.</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">animation-iteration-count</td>
+                    <td>infinite</td>
+                    <td>La animación se repite indefinidamente.</td>
+                </tr>
+                <tr>
+                    <td>número</td>
+                    <td>Se repite el número de veces indicado (por defecto es 1).</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">animation-direction</td>
+                    <td>normal</td>
+                    <td>La animación se reproduce tal como fue definida.</td>
+                </tr>
+                <tr>
+                    <td>alternate</td>
+                    <td>Primero se reproduce normal y luego al revés, alternando.</td>
+                </tr>
+
+                <tr>
+                    <td>animation-delay</td>
+                    <td>tiempo en segundos (ej: 2s)</td>
+                    <td>Indica el tiempo de espera antes de iniciar la animación.</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3">animation-fill-mode</td>
+                    <td>none</td>
+                    <td>Al acabar la animación se aplican los estilos normales del elemento.</td>
+                </tr>
+                <tr>
+                    <td>forwards</td>
+                    <td>El elemento se queda con el estilo final de la animación (100%).</td>
+                </tr>
+                <tr>
+                    <td>backwards</td>
+                    <td>El elemento se queda con el estilo inicial de la animación (0%).</td>
+                </tr>
+                </table>
+                <br>
+
+                <li> Definimos cómo será la animación</li>
+                <pre>
+                @keyframes animacion_martillo {
+                0% {
+                    transform: rotate(0deg);
+                }
+                50% {
+                    transform: rotate(90deg);
+                }
+                100% {
+                    transform: rotate(0deg);
+                }
+                }
+                </pre>
+                </ol>
+                
+            
+                </div>
+
+                <div class="ejemplo">
+                    <p><strong>Resultado:</strong></p>
+
+                    <img id="mariposaAnimacion" src="/IMAGEN/MARIPOSA.png" alt="Mariposa">
+
+                    </div>
+        </article>
+
+        <!-- COMPATIBILIDAD CON NAVEGADORES -->
+            <article id="compatibilidadNavegadores">
+
+                <header>
+                    <h2>Compatibilidad Con Navegadores</h2>
+                </header>
+
+                <p>
+                Como ocurre con otras funcionalidades de HTML5 todavía es necesario añadir los prefijos para que todos los navegadores (excepto Opera -que aunque funciona, no funciona bien del todo- e Internet Explorer -que, como siempre, no funciona ni bien ni mal, simplemente "no funciona") entiendan estos códigos.
+                </p>
+                <br>
+                
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de animacion:</strong></p>
+
+                <pre>
+               @keyframes animacion_martillo {
+                0% {
+                    transform: rotate(0deg);
+                    top:0px
+                }
+                42% {
+                    transform: rotate(90deg);
+                    top:57px
+                }
+                60% {
+                    transform: rotate(90deg);
+                    top:57px
+                }
+                100% {
+                    transform: rotate(0deg);
+                    top:0px
+                }
+                }
+
+                @-webkit-keyframes animacion_martillo {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    top:0px
+                }
+                42% {
+                    -webkit-transform: rotate(90deg);
+                    top:57px
+                }
+                60% {
+                    -webkit-transform: rotate(90deg);
+                    top:57px
+                }
+                100% {
+                    -webkit-transform: rotate(0deg);
+                    top:0px
+                }
+                }
+
+                @-moz-keyframes animacion_martillo {
+                0% {
+                    -moz-transform: rotate(0deg);
+                    top:0px
+                }
+                42% {
+                    -moz-transform: rotate(90deg);
+                    mtop:57px
+                }
+                60% {
+                    -moz-transform: rotate(90deg);
+                    top:57px
+                }
+                100% {
+                    -moz-transform: rotate(0deg);
+                    top:0px
+                }
+                }
+
+                @-o-keyframes animacion_martillo {
+                0% {
+                    -o-transform: rotate(0deg);
+                    top:0px
+                }
+                42% {
+                    -o-transform: rotate(90deg);
+                    top:57px
+                }
+                60% {
+                    -o-transform: rotate(90deg);
+                    top:57px
+                }
+                100% {
+                    -o-transform: rotate(0deg);
+                    top:0px
+                }
+                }
+                </pre>
+                <br>
+                <p>
+                En este extenso código todavía no se ha añadido el prefijo -ms- para cuando Internet Explorar acepte animation.
+                </p>
+                <br>
+                <p>Por ultimo queda lo siguiente:</p>
+                <br>
+                <pre>
+                #martillo {
+                animation:animacion_martillo 2s;
+                -webkit-animation:animacion_martillo 2s;
+                -moz-animation:animacion_martillo 2s;
+                -o-animation:animacion_martillo 2s;
+                }
+                </pre>
+                </div>
+
+                <div class="ejemplo">
+                    <p><strong>Resultado:</strong></p>
+
+                    <img id="mariposaNavegador" src="/IMAGEN/MARIPOSA.png" alt="Mariposa">
+
+                    </div>
+                
+        </article>
+
+
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li>📞 Tel: 3169195728</li>
+                <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

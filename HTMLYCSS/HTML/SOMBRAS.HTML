@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes y Lineas </title>
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+    <link rel="stylesheet" href="/CSS/SOMBRAS.CSS">
+</head>
+
+<body>
+    <header>
+        <h1>Bordes Redondeados y Lineas en CSS</h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li>📞 3169195728</li>
+            <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+
+        <!--SECTION-->
+    <section id="contenedor-bordes">
+
+            <article id="bordes-intro">
+            <header>
+                <h1>Sombras</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li>Sombras cajas </li>
+                    <li>Creacion de halos o resplandores</li>
+                    <li>Sobra de texto</li>
+                    <li>Multiples sombras</li>
+                </ul>
+                <p>
+                  En CSS, las sombras son efectos visuales que se usan para crear la apariencia de profundidad o relieve en los elementos de una página web. Permiten que un objeto parezca elevado o separado del fondo, agregando una sombra alrededor del texto o de una caja.
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+  
+        <!-- SOMBRAS DIV O CAJAS -->
+            <article id="sombras-div">
+
+                <header>
+                    <h2>Sombras Div o Cajas</h2>
+                </header>
+
+                <p>
+                    Con HTML5 podemos crear de una manera sencilla tanto sombras para zonas del HTML
+                    <code>&lt;div, article, footer, header &gt;</code>.
+                    Aunque cada uno de estos tipos de sombra tiene su propia etiqueta, la sintaxis sigue la misma lógica.
+                </p>
+
+
+                <div class="ejemplo-codigo">
+
+                    <p><strong>Ejemplo CSS de diferentes sombras:</strong></p>
+
+                    <pre>
+                    section{
+                    box-shadow: 6px 20px 10px black;
+                    }
+                    </pre>
+
+                    <ul>
+                        <li>El primer valor (6px), indica el número de píxeles que se desviará la sombra horizontalmente.</li>
+                        <li>El segundo valor (20px), especifica el número de píxeles que se moverá la sombra verticalmente.</li>
+                        <li>El tercer valor (10px), es la suavidad que tendrá la sombra (a menor valor más duro será el borde de la sombra).</li>
+                        <li>El último valor pertenece al color de la sombra (indicando el nombre de color o su código hexadecimal).</li>
+                    </ul>
+
+                </div>
+
+                <div class="ejemplo">
+                    <p><strong>Resultado:</strong></p>
+                    <div id="sombraCaja"></div>
+                </div>
+
+            </article>
+     
+
+         <!-- SOMBRAS INTERNAS -->
+
+        <article id="seccion-interna">
+
+            <header>
+                <h2>Sombras Internas</h2>
+            </header>
+
+            <p>
+               Para crear sombras internas únicamente tenemos que añadir el valor inset al final de
+                <code>&lt;box-shadow&gt;</code>.
+            </p>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo CSS de diferentes sombras::</strong></p>
+
+                <pre>
+                section{
+                box-shadow: 7px 9px 15px black inset;
+                }
+                </pre>
+
+            </div>
+
+            <div class="ejemplo">
+
+                <p><strong>Resultado:</strong></p>
+
+                <div class="sombraInterna"></div>
+
+            </div>
+
+        </article>
+
+        <!-- HALOS O RESPLANDORES -->
+ 
+        <article id="seccion-halos">
+
+            <header>
+                <h2>Halos o Resplandores</h2>
+            </header>
+
+            <p>
+               Para crear un halo o resplandor que rodee una caja o el <div> que corresponda indicamos '0px' en los dos primeros valores y especificamos el color del resplandor.
+            </p>
+
+            <p>Tipos de bordes:</p>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo CSS de diferentes sombras:</strong></p>
+
+                <pre>
+                section{
+                box-shadow: 0px 0px 30px blue;
+                }
+                </pre>
+
+            </div>
+
+            <div class="ejemplo">
+
+                <p><strong>Resultado:</strong></p>
+
+                <div class="sombraHalo">none</div>
+
+            </div>
+
+        </article>
+
+        <!-- SOMBRA TEXTO -->
+      
+        <article id="sombra-texto">
+
+            <header>
+                <h2>Sombra de Textos </h2>
+            </header>
+
+            <p>
+               En el caso de las sombras en textos utilizamos la etiqueta <code>'text-shadow'</code> que funciona exactamente igual que
+               <code>'box-shadow':</code>
+            </p>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo en CSS de sombras:</strong></p>
+
+                <pre>
+                #apartado1{
+                text-shadow: 10px 10px 5px gray;
+                }
+                </pre>
+
+                <ul>
+                    <li>El primer valor (10px) es la separación horizontal de la sombra (hacia la derecha, ya que es positivo).</li>
+                    <li>El segundo valor (10px) es la separación vertical de la sombra (hacia abajo, ya que es positivo).</li>
+                    <li>El tercer valor (5px) es la suavidad de la sombra.</li>
+                    <li>El último valor (gray) es el color de la sombra.</li>
+                </ul>
+
+
+            </div>
+
+            <div class="ejemplo">
+
+                <p><strong>Resultado:</strong></p>
+
+                <div id="sombraTexto">
+                    Hola! Soy karol 
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- MULTIPLES SOMBRAS -->
+      
+        <article id="multiple-sombra">
+
+            <header>
+                <h2>Multiples Sombras</h2>
+            </header>
+
+            <p>
+              Para aplicar más de una sombra a un mismo elemento debemos añadir los diferentes parámetros de cada una de las sombras separadas por comas:
+            </p>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo en CSS de sombras:</strong></p>
+
+                <pre>
+                #apartado1{
+                box-shadow: 0px 0px 20px red inset, 0px 0px 25px blue;
+                }
+                </pre>
+
+                <p>La primera sombra (0px 0px 20px red inset) está situada justo encima del div, con una distancia de sombra de 20 píxeles, de color roja e interna. La segunda (0px 0px 25px blue) también está situada justo encima del div, con una longitud de sombra de 25 píxeles, de color azul y como no se indica ("inset"), es una sombra externa.</p>
+            </div>
+
+            <div class="ejemplo">
+
+                <p><strong>Resultado:</strong></p>
+
+                <div id="sombraMultiple">
+        
+                </div>
+
+            </div>
+
+        </article>
+  
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li>📞 Tel: 3169195728</li>
+                <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+
+    
+</body>
+
+</html>

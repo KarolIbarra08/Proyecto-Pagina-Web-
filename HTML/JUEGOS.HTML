@@ -1,0 +1,365 @@
+<html>
+
+<head>
+    <title>Evaluación - Arquitectura Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script>
+        function calcular() {
+            var puntaje = 0;
+
+            // Arquitectura Web
+            for (var i = 1; i <= 5; i++) {
+                var opciones = document.getElementsByName("w" + i);
+                for (var j = 0; j < opciones.length; j++) {
+                    if (opciones[j].checked && opciones[j].value == "1") {
+                        puntaje++;
+                    }
+                }
+            }
+
+            // Arquitectura Frontend
+            for (var i = 1; i <= 5; i++) {
+                var opciones = document.getElementsByName("f" + i);
+                for (var j = 0; j < opciones.length; j++) {
+                    if (opciones[j].checked && opciones[j].value == "1") {
+                        puntaje++;
+                    }
+                }
+            }
+
+            document.getElementById("resultado").innerHTML =
+                "<h2>Puntaje Final: " + puntaje + " / 10</h2>";
+        }
+    </script>
+
+</head>
+
+<body style="background-color:#D8F0F2; color:#000000;font-family: 'Times New Roman', Times, serif;"></body>
+ 
+<div style="text-align:center; margin-top:20px;">
+    <h1 style="font-family:serif; color:#000000;">
+      <strong>Juego Iterativo</strong>
+    </h1>
+  </div>
+
+    <!-- Navbar-->
+     <nav class="navbar navbar-expand-lg" style="background-color: #F2B6C6;">
+    <div class="container-fluid">
+      <a class="navbar-brand p-0 m-0 d-flex align-items-center" href="index.html">
+        <img src="IMAGEN/LOGOSINFONDO.png" alt="Logo"
+          style="height: 100px; width: auto; display: block; object-fit: cover;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-4" style="font-family: serif; font-size: 1.6rem;">
+
+          <li class="nav-item">
+            <li class="nav-item"><a class="nav-link active text-black" href="CONTENIDOPRINCIPAL.HTML" target="_blank" rel="noopener noreferrer"><strong>Inicio</strong></a></li>
+          </li>
+
+          <!-- Arquitectura Web con submenu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown">
+              <strong>Arquitectura Web</strong>
+            </a>
+            <ul class="dropdown-menu" style="font-family: serif;">
+              <li><a class="dropdown-item" href="ARQUITECTURADEPAGINASWEB.HTML" target="_blank">Informacion de Arquitectura Web</a></li>
+              <li><a class="dropdown-item" href="ARQUITECTURADEPAGINASWEB.HTML#tiposArquitecturaWeb " target="_blank">Tipos de
+                  Arquitectura Web</a></li>
+            </ul>
+          </li>
+
+          <!-- Arquitectura Frontend con submenu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown">
+              <strong>Arquitectura Frontend</strong>
+            </a>
+            <ul class="dropdown-menu" style="font-family: serif;">
+              <li><a class="dropdown-item" href="ARQUITECTURAFRONTEND.HTML" target="_blank" >Informacion de Arquitectura Frontend</a>
+              </li>
+              <li><a class="dropdown-item" href="ARQUITECTURAFRONTEND.HTML#tiposArquitecturaFrontend" target="_blank" >Tipos de Arquitectura
+                  Frontend</a></li>
+          </li>
+        </ul>
+        <!-- Recursos / BD -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown">
+            <strong>Recursos / Juego</strong>
+          </a>
+          <ul class="dropdown-menu" style="font-family: serif;">
+            <li><a class="dropdown-item" href="JUEGOS.HTML" target="_blank">Juego evaluativo</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="https://unimayor.edu.co/web/biblioteca" target="_blank">Biblioteca
+                UNIMAYOR</a></li>
+            <li><a class="dropdown-item" href="https://scholar.google.com/?hl=es" target="_blank">Google Académico</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Contacto -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown">
+            <strong>Contacto</strong>
+          </a>
+          <ul class="dropdown-menu" style="font-family: serif;">
+            <li><a class="dropdown-item" href="tel:+573169195728">Teléfono (3169195728)</a></li>
+            <li><a class="dropdown-item" href="mailto:kt.ibarra@unimayor.edu.co">Correo (kt.ibarra@unimayor.edu.co)</a>
+            </li>
+          </ul>
+        </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <hr>
+
+        <form>
+
+            <table border="2" align="center" width="85%" cellpadding="10" bgcolor="white">
+
+                <tr bgcolor="#BF2A70">
+                    <th colspan="2" style="color:white;">
+                        Arquitectura Web
+                    </th>
+                </tr>
+
+                <tr bgcolor="#F2B6C6">
+                    <td colspan="2"><b>1. ¿Qué define la Arquitectura Web?</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w1" value="1"> Estructura cliente-servidor-base de datos</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w1" value="0"> Diseño visual</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w1" value="0"> Tipografía</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w1" value="0"> Colores</td>
+                </tr>
+
+                <tr bgcolor="#F2B6C6">
+                    <td colspan="2"><b>2. ¿Dónde se ejecuta la lógica del negocio?</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w2" value="1"> Backend</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w2" value="0"> Frontend</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w2" value="0"> CSS</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w2" value="0"> Navegador</td>
+                </tr>
+
+                <tr bgcolor="#F2B6C6">
+                    <td colspan="2"><b>3. ¿Qué protocolo permite comunicación web?</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w3" value="1"> HTTP/HTTPS</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w3" value="0"> USB</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w3" value="0"> HDMI</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w3" value="0"> Bluetooth</td>
+                </tr>
+
+                <tr bgcolor="#F2B6C6">
+                    <td colspan="2"><b>4. ¿Qué arquitectura divide en servicios pequeños?</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w4" value="1"> Microservicios</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w4" value="0"> Monolítica</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w4" value="0"> SPA</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w4" value="0"> PWA</td>
+                </tr>
+
+                <tr bgcolor="#F2B6C6">
+                    <td colspan="2"><b>5. ¿Qué significa escalabilidad?</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w5" value="1"> Soportar más usuarios sin fallar</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w5" value="0"> Cambiar colores</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w5" value="0"> Eliminar servidor</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="w5" value="0"> Reducir código</td>
+                </tr>
+
+                <tr bgcolor="#BF2A70">
+                <th colspan="2" style="color:white;">
+                    Arquitectura Frontend
+                </th>
+                </tr>
+
+                <tr bgcolor="#F2B6C6">
+                    <td colspan="2"><b>1. ¿Qué lenguaje estructura el contenido?</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f1" value="1"> HTML</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f1" value="0"> Java</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f1" value="0"> SQL</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f1" value="0"> PHP</td>
+                </tr>
+
+                <tr bgcolor="#F2B6C6">
+                    <td colspan="2"><b>2. ¿Qué lenguaje da estilo visual?</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f2" value="1"> CSS</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f2" value="0"> Python</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f2" value="0"> C++</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f2" value="0"> MySQL</td>
+                </tr>
+
+                <tr bgcolor="#F2B6C6">
+                    <td colspan="2"><b>3. ¿Qué lenguaje agrega interactividad?</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f3" value="1"> JavaScript</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f3" value="0"> Excel</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f3" value="0"> Bash</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f3" value="0"> Word</td>
+                </tr>
+
+                <tr bgcolor="#F2B6C6">
+                    <td colspan="2"><b>4. ¿Qué es un framework frontend?</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f4" value="1"> Herramienta que facilita desarrollo</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f4" value="0"> Base de datos</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f4" value="0"> Servidor físico</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f4" value="0"> Router</td>
+                </tr>
+
+                <tr bgcolor="#F2B6C6">
+                    <td colspan="2"><b>5. ¿Qué significa diseño responsivo?</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f5" value="1"> Adaptarse a distintos dispositivos</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f5" value="0"> Cambiar idioma</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f5" value="0"> Eliminar imágenes</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="f5" value="0"> Aumentar servidor</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center" bgcolor="#F2B6C6">
+                        <br>
+                        <input type="button" value="Calcular Puntaje" onclick="calcular()">
+                        <br><br>
+                        <div id="resultado"></div>
+                        <br>
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+
+        <br>
+
+        <center>
+            <hr width="80%">
+            <b>Karol Tatiana Ibarra</b><br>
+            Proyecto Académico 2026
+        </center>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

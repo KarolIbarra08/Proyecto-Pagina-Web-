@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUDIO</title>
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+    <link rel="stylesheet" href="/CSS/VIDEO.CSS">
+</head>
+
+<body>
+    <header>
+        <h1>Audio</h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li>📞 3169195728</li>
+            <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+    
+        <!--SECTION-->
+    <section id="contenedor-bordes">
+
+            <article id="bordes-intro">
+            <header>
+                <h1>Audio</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li>Diferentes estandares</li>
+                    <li>Compatibilidad con navegadores </li>
+                    <li>Audio</li>
+                </ul>
+                <p>
+               Un audio en HTML se reproduce usando el elemento audio, que permite escuchar sonidos o música en la página web. CSS no define el audio, solo sirve para cambiar la apariencia del reproductor, como su ancho, borde o color, pero no puede crear ni reproducir el sonido.
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+  
+        <!-- ESTANADARES DE AUDIO -->
+        <article id="estandarAudio">
+
+            <header>
+                <h2>Estandares de Audio</h2>
+            </header>
+
+            <p>
+               Para utilizar audio en HTML5 sin usar plugins externos ocurre algo parecido que con el vídeo. Existen diferentes formatos de audio y desgraciadamente no existe ninguno que funcione perfectamente en todos los navegadores, por lo que al menos tendremos que utilizar dos formatos para poder abarcarlos a todos.
+            </p>
+
+            <br>
+
+            <p>
+                Estos 2 formatos de audio mayoritarios son:
+            </p>
+            <br>
+            <ul>
+                <li>El formato MP3 (ficheros con extensión .mp3) abarca a la mayoría de navegadores, excepto a FireFox. Aunque está ampliamente arraigado, está sujeto a patentes.</li>
+                <li>El formato OGG Vorbis (ficheros con extensión .ogg) no está sujeto a patentes (igual que ocurre en el caso del vídeo). No es aceptado por Internet Explorer ni por Safari.</li>
+            </ul>
+        </article>
+
+
+        <!-- COMPATIBILIDAD CON NAVEGADORES -->
+        <article id="compatibilidadNavegadores">
+
+            <header>
+                <h2>Compatibilidad Con Navegadores</h2>
+            </header>
+
+            <p>La tabla de formatos de audios aceptados por los diferentes navegadores queda así:</p>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                    <th>Navegador</th>
+                    <th>MP3</th>
+                    <th>OGG</th>
+                    <th>WAV</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Firefox</td>
+                    <td>NO</td>
+                    <td>SI</td>
+                    <td>SI</td>
+                    </tr>
+                    <tr>
+                    <td>Chrome</td>
+                    <td>SI</td>
+                    <td>SI</td>
+                    <td>SI</td>
+                    </tr>
+                    <tr>
+                    <td>Opera</td>
+                    <td>SI</td>
+                    <td>SI</td>
+                    <td>SI</td>
+                    </tr>
+                    <tr>
+                    <td>Safari</td>
+                    <td>SI</td>
+                    <td>NO</td>
+                    <td>SI</td>
+                    </tr>
+                    <tr>
+                    <td>IExplorer</td>
+                    <td>SI</td>
+                    <td>NO</td>
+                    <td>NO</td>
+                    </tr>
+                </tbody>
+                </table>
+        </article>
+
+        <!-- AUDIO -->
+        <article id="audio">
+
+        <header>
+        <h2>Audio</h2>
+        </header>
+
+        <p>
+        El código sencillo para un único formato de audio sería así:
+        </p>
+
+        <ul>
+        <li><strong>Controls</strong>: Establece si tendrá la barra de navegación (play, stop, volumen...) o no</li>
+        <li><strong>Autoplay</strong>: Indica si el audio se inicia automáticamente al cargar la página html</li>
+        <li><strong>Loop</strong>: Establece si al acabar el audio, éste debe volver a empezar indefinidamente</li>
+        <li><strong>Preload</strong>: Indica si el audio se empieza a cargar cuando el navegador carga la página html</li>
+        </ul>
+
+        <br>
+
+        <div class="ejemplo-codigo">
+
+        <p><strong>Ejemplo de audio:</strong></p>
+
+       <pre>
+        &lt;audio src="audio.mp3"&gt;
+        &lt;/audio&gt;
+
+        &lt;audio src="audio.mp3" autoplay controls loop&gt;
+        &lt;/audio&gt;
+        </pre>
+
+        <br>
+
+        <p>El código HTML completo quedaría así:</p>
+
+        <pre>
+        &lt;audio controls&gt;
+        &lt;source src="audio.mp3" type="audio/mpeg"/&gt;
+        &lt;source src="audio.ogg" type="audio/ogg"/&gt;
+        &lt;/audio&gt;
+        </pre>
+
+        </div>
+
+        <div class="ejemplo">
+
+        <p><strong>Resultado:</strong></p>
+
+        <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+        Tu navegador no soporta el elemento audio.
+        </audio>
+
+        </div>
+
+        </article>
+
+   </section> 
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li>📞 Tel: 3169195728</li>
+                <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSPARENCIAS</title>
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+    <link rel="stylesheet" href="/CSS/TRANSPARENCIA.CSS">
+</head>
+
+<body>
+    <header>
+        <h1>Transparencias</h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li>📞 3169195728</li>
+            <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+    
+        <!--SECTION-->
+    <section id="contenedor-bordes">
+
+            <article id="bordes-intro">
+            <header>
+                <h1>Colores,Transparencias y Degrados</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li>Colores Predefinidos</li>
+                    <li>Transparencias</li>
+                    <li>Degrados</li>
+                    <li>Degrados lineales</li>
+                    <li>Degrados Radicales</li>
+                    <li>Compatibilidad con navegadores</li>
+                </ul>
+                <p>
+                En HTML y CSS, los colores cambian la apariencia de texto, fondos y bordes; las transparencias permiten que los elementos se vean parcialmente dejando ver lo que hay detrás; y los degradados crean transiciones suaves entre dos o más colores para un efecto visual atractivo.
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+  
+        <!-- COLORES PREDEFINIDOS -->
+        <article id="coloresPredefinidos">
+
+            <header>
+                <h2>Colores Predefinidos</h2>
+            </header>
+
+            <p>
+               En HTML5 existen colores predefinidos que tienen nombres mucho más fáciles de recordar que sus respectivos códigos hexadecimales. Es mucho más fácil acordarse de nombres de colores como 'Tomato', 'Gold', 'Olive', 'Chocolate', 'Silver', 'Magenta' o 'Salmon' que de sus respectivos códigos de color en hexadecimal: '#FF6347', '#FFD700', '#808000', '#D2691E', '#C0C0C0', '#FF00FF' o '#FA8072'.
+            </p>
+
+            <br>
+
+            <div class="ejemplo-codigo">
+
+             <p><strong>Ejemplo de transparencia:</strong></p>
+
+            <pre>
+            color=tomato;
+            color=#FF6347:
+            </pre>
+
+            <br>
+
+            </div>
+
+            <div class="ejemplo">
+            <p><strong>Resultado:</strong></p>
+            <div class="color-tomato">Tomato</div>
+            <div class="color-gold">Gold</div>
+            <div class="color-olive">Olive</div>
+            <div class="color-chocolate">Chocolate</div>
+            <div class="color-silver">Silver</div>
+            <div class="color-magenta">Magenta</div>
+            <div class="color-salmon">Salmon</div>
+            </div>
+
+
+        </article>
+
+
+       <!-- TRANSPARENCIAS -->
+        <article id="transparencias">
+
+            <header>
+                <h2>Transparencias</h2>
+            </header>
+
+            <p>
+                En CSS3 se pueden definir transparencias, ya sea en el color de fondo de un 
+                <strong>div</strong> concreto o en algunos elementos individuales.
+            </p>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo usando rgba:</strong></p>
+
+                <pre>
+        background-color: rgba(255,0,0,0.4);
+                </pre>
+
+                <p>
+                    El primer cuadro representa un color rojo con una opacidad del 40% (0.4). 
+                    El segundo cuadro se añade para poder ver la diferencia con el color rojo sin transparencia.
+                </p>
+
+                <p><strong>Ejemplo usando opacity:</strong></p>
+
+                <pre>
+        opacity: 0.4;
+                </pre>
+
+                <p>
+                    Otra posibilidad (para algunos objetos como imágenes o elementos SVG) 
+                    es utilizar la propiedad <strong>opacity</strong>, indicando valores 
+                    desde <strong>0</strong> (totalmente transparente) hasta <strong>1</strong> 
+                    (totalmente opaco).
+                </p>
+
+            </div>
+
+            <div class="ejemplo">
+                <p><strong>Resultado:</strong></p>
+
+                <div class="transparencia-bg">
+                    Color con transparencia (40%)
+                </div>
+
+                <div class="transparencia-opacity">
+                    Color con opacidad (40%)
+                </div>
+
+            </div>
+
+        </article>
+
+            <!-- DEGRADADOS -->
+    <article id="degradados">
+
+        <header>
+            <h2>Degradados</h2>
+        </header>
+
+        <p>
+            Los degradados mediante CSS3 han sido una de las características que más cambios 
+            han tenido hasta estabilizarse y generalizarse de forma similar en casi todos 
+            los navegadores.
+        </p>
+
+        <p>
+            Dejaremos atrás el antiguo código de degradados que utilizaban versiones antiguas 
+            de navegadores como Chrome o Safari y nos centraremos en el código estándar que 
+            funciona en:
+        </p>
+
+        <ul>
+            <li>Firefox 3.6+</li>
+            <li>Safari 5.1+</li>
+            <li>Chrome 10+</li>
+            <li>Opera 11.10+ (solo degradados lineales)</li>
+            <li>Internet Explorer 10+</li>
+        </ul>
+
+    </article>
+
+
+    <!-- DEGRADADO LINEAL -->
+    <article id="degradadoLineal">
+
+        <header>
+            <h2>Degradado Lineal</h2>
+        </header>
+
+        <p>
+            Primero se define dónde empieza el degradado (top, bottom, right, left) o bien 
+            indicando un ángulo (por ejemplo 45deg). Después se indican los colores que 
+            compondrán el degradado y, opcionalmente, el porcentaje que ocupará cada color.
+        </p>
+
+        <div class="ejemplo-codigo">
+
+            <p><strong>Ejemplo básico:</strong></p>
+
+            <pre>
+            background: linear-gradient(dirección, color1, color2);
+            background: linear-gradient(top, red, gold);
+            </pre>
+
+            <p>
+                Degradado lineal que empieza en la parte superior del div (top) y va desde el color red hasta el color gold.
+            </p>
+
+
+            <pre>
+            background: 
+            linear-gradient(30deg, crimson, sienna, royalblue, indianred, purple);
+            </pre>
+
+            <p>
+                Degradado lineal que se inicia con una inclinación de 30 grados (30deg) 
+                y que en su recorrido pasa por los colores crimson, sienna, royalblue, 
+                indianred y purple.
+            </p>
+
+
+            <pre>
+            background:
+             linear-gradient(top, black 10%, orangered 75%, yellow);
+            </pre>
+
+            <p>
+                Degradado lineal que empieza en la parte superior del div (top) y 
+                define tres colores con porcentajes. El negro ocupa el 10% del espacio, 
+                el orangered ocupa desde el 10% hasta el 75% y el resto corresponde al yellow.
+            </p>
+
+        </div>
+
+
+        <div class="ejemplo">
+            <p><strong>Resultado:</strong></p>
+
+            <div class="degradado-lineal1">Top</div>
+            <div class="degradado-lineal2">Inclinacion</div>
+            <div class="degradado-lineal3">Superior</div>
+
+        </div>
+
+    </article>
+
+    <!-- DEGRADADO RADIAL -->
+    <article id="degradadoRadial">
+
+        <header>
+            <h2>Degradado Radial</h2>
+        </header>
+
+        <p>
+            Aunque algunos navegadores antiguos no admitían degradados radiales, hoy en día 
+            la mayoría de navegadores modernos los soportan. Su estructura es muy parecida 
+            a la de los degradados lineales, utilizando la función 
+            <code>radial-gradient</code>.
+        </p>
+
+        <div class="ejemplo-codigo">
+
+            <p><strong>Estructura básica:</strong></p>
+
+            <pre>
+            background: 
+            radial-gradient(posición del centro, forma/tamaño, color1, color2);
+            </pre>
+
+            <ul>
+
+                <li>
+                    <strong>closest-side:</strong> El degradado se expande hasta el lado de la caja 
+                    más cercano al centro.
+                </li>
+
+                <pre>
+                background: 
+                radial-gradient(center center, circle, black, #1162ac);
+                </pre>
+
+                <li>
+                    <strong>farthest-side:</strong> El degradado se expande hasta el lado más lejano 
+                    de la caja respecto al centro.
+                </li>
+
+                <pre>
+                background: 
+                radial-gradient(200px top, ellipse, white, #1162ac, black);
+                </pre>
+
+                <li>
+                    <strong>closest-corner:</strong> El degradado se expande hasta la esquina más 
+                    cercana al centro.
+                </li>
+
+                <pre>
+                background: 
+                radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+                </pre>
+
+                <li>
+                    <strong>farthest-corner:</strong> El degradado se expande hasta la esquina 
+                    más lejana del centro.
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="ejemplo">
+
+            <p><strong>Resultado:</strong></p>
+            <br>
+            <div class="degradado-radiales1">closest-side </div>
+            <div class="degradado-radiales2">farthest-side</div>
+            <div class="degradado-radiales3">closest-corner</div>
+
+        </div>
+
+    </article>
+
+    <!-- COMPATIBILIDAD DE NAVEGADORES -->
+        <article id="compatibilidadNavegadores">
+
+        <header>
+        <h2>Compatibilidad Navegadores</h2>
+        </header>
+
+        <p>
+        Para que los degradados funcionen en la mayoría de navegadores modernos es necesario añadir el código CSS con los diferentes prefijos de navegador, sin olvidar el código genérico (sin prefijos) para que también funcione cuando los prefijos no sean necesarios.
+        </p>
+
+        <br>
+
+        <div class="ejemplo-codigo">
+
+        <p><strong>Ejemplo de transparencias:</strong></p>
+
+        <pre>
+        background:linear-gradient(top, red, gold);
+        background:-webkit-linear-gradient(top, red, gold);
+        background:-moz-linear-gradient(top, red, gold);
+        background:-o-linear-gradient(top, red, gold);
+        background:-ms-linear-gradient(top, red, gold);
+        </pre>
+        <br>
+       
+        </div>
+
+        <div class="ejemplo">
+            <div id="navegacionTransparencia"></div>
+        </div>
+
+    </article>
+
+   </section> 
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li>📞 Tel: 3169195728</li>
+                <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

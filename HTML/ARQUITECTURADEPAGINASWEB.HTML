@@ -1,0 +1,537 @@
+<html>
+
+<head>
+  <title>Paginas Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color:#D8F0F2; color:#000000;font-family: 'Times New Roman', Times, serif;"></body>
+
+  <!--titulo principal-->
+  <div style="text-align:center; margin-top:20px;">
+    <h1 style="font-family:serif; color:#000000;">
+      <strong>Arquitectura Web</strong>
+    </h1>
+  </div>
+  <hr>
+
+  <!-- Navbar-->
+       <nav class="navbar navbar-expand-lg" style="background-color: #F2B6C6;">
+    <div class="container-fluid">
+      <a class="navbar-brand p-0 m-0 d-flex align-items-center" href="index.html">
+        <img src="IMAGEN/LOGOSINFONDO.png" alt="Logo"
+          style="height: 100px; width: auto; display: block; object-fit: cover;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-4" style="font-family: serif; font-size: 1.6rem;">
+
+          <li class="nav-item">
+            <li class="nav-item"><a class="nav-link active text-black" href="CONTENIDOPRINCIPAL.HTML" target="_blank" rel="noopener noreferrer"><strong>Inicio</strong></a></li>
+
+          <!-- Arquitectura Web con submenu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown">
+              <strong>Arquitectura Web</strong>
+            </a>
+            <ul class="dropdown-menu" style="font-family: serif;">
+              <li><a class="dropdown-item" href="ARQUITECTURADEPAGINASWEB.HTML" target="_blank">Informacion de Arquitectura Web</a></li>
+              <li><a class="dropdown-item" href="ARQUITECTURADEPAGINASWEB.HTML#tiposArquitecturaWeb " target="_blank">Tipos de
+                  Arquitectura Web</a></li>
+            </ul>
+          </li>
+
+          <!-- Arquitectura Frontend con submenu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown">
+              <strong>Arquitectura Frontend</strong>
+            </a>
+            <ul class="dropdown-menu" style="font-family: serif;">
+              <li><a class="dropdown-item" href="ARQUITECTURAFRONTEND.HTML" target="_blank" >Informacion de Arquitectura Frontend</a>
+              </li>
+              <li><a class="dropdown-item" href="ARQUITECTURAFRONTEND.HTML#tiposArquitecturaFrontend" target="_blank" >Tipos de Arquitectura
+                  Frontend</a></li>
+          </li>
+        </ul>
+
+        <!-- Recursos / BD -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown">
+            <strong>Recursos / Juego</strong>
+          </a>
+          <ul class="dropdown-menu" style="font-family: serif;">
+            <li><a class="dropdown-item" href="JUEGOS.HTML" target="_blank">Juego evaluativo</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="https://unimayor.edu.co/web/biblioteca" target="_blank">Biblioteca
+                UNIMAYOR</a></li>
+            <li><a class="dropdown-item" href="https://scholar.google.com/?hl=es" target="_blank">Google Académico</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Contacto -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown">
+            <strong>Contacto</strong>
+          </a>
+          <ul class="dropdown-menu" style="font-family: serif;">
+            <li><a class="dropdown-item" href="tel:+573169195728">Teléfono (3169195728)</a></li>
+            <li><a class="dropdown-item" href="mailto:kt.ibarra@unimayor.edu.co">Correo (kt.ibarra@unimayor.edu.co)</a>
+            </li>
+          </ul>
+        </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <hr>
+
+
+  <!--definicion previa-->
+  <div class="card"
+    style="border: 20px solid #D8F0F2; background-color:#D8F0F2; font-family: serif; border-radius: 15px; overflow: hidden; margin-top:40px;">
+
+    <div class="card-header"
+      style="background-color:#F2B6C6; font-size:2rem; font-weight:bold; text-align:center; border-bottom: 4px solid #D8F0F2;">
+      Arquitectura Web (Nivel General)
+    </div>
+    <hr>
+
+    <div class="card-body" style="padding: 30px;">
+
+      <div style="background-color:#ffffff; padding:30px; border-radius:12px; border:8px solid #D8F0F2;">
+
+        <!-- tabla -->
+        <table style="width:100%; border-collapse:collapse; font-size:1.05rem;">
+          <!--definicion-->
+          <tr>
+            <td style="width:25%; font-weight:bold; padding:15px; border-bottom:10px solid #D8F0F2;">
+              Definición
+            </td>
+            <td style="padding:15px; border-bottom:10px solid #D8F0F2; text-align:justify;">
+              Es la estructura técnica y lógica que organiza la interacción entre cliente (frontend),
+              servidor (backend), bases de datos y servicios externos. Define el modelo estructural bajo el cual
+              se construye y opera una aplicación web, estableciendo el flujo de información,
+              la separación de capas y la distribución de responsabilidades.
+            </td>
+          </tr>
+
+          <!-- impotancia -->
+          <tr>
+            <td style="font-weight:bold; padding:15px; border-bottom:10px solid #D8F0F2;">
+              Importancia
+            </td>
+            <td style="padding:15px; border-bottom:10px solid #D8F0F2;">
+              <ul style="margin:0; padding-left:20px; line-height:1.6;">
+                <li>Permite escalabilidad estructural.</li>
+                <li>Optimiza rendimiento y seguridad.</li>
+                <li>Facilita mantenimiento y actualización.</li>
+                <li>Reduce errores técnicos.</li>
+                <li>Permite trabajo colaborativo organizado.</li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- caracteristicas -->
+          <tr>
+            <td style="font-weight:bold; padding:15px; border-bottom:10px solid #D8F0F2;">
+              Características
+            </td>
+            <td style="padding:15px; border-bottom:10px solid #D8F0F2;">
+              <ul style="margin:0; padding-left:10px; line-height:1.6;">
+                <li>Separación de responsabilidades.</li>
+                <li>Modelo cliente-servidor.</li>
+                <li>Uso de HTTP/HTTPS.</li>
+                <li>Integración con bases de datos.</li>
+                <li>Modularidad.</li>
+                <li>Escalabilidad.</li>
+                <li>Seguridad estructurada.</li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- funcion -->
+          <tr>
+            <td style="font-weight:bold; padding:10px;">
+              Función
+            </td>
+            <td style="padding:10px; text-align:justify;">
+              Organizar técnicamente la aplicación web para garantizar eficiencia operativa,
+              crecimiento sostenible y facilidad de mantenimiento a largo plazo.
+            </td>
+          </tr>
+
+        </table>
+        <div style="margin-top:40px; text-align:center;">
+          <h3 style="font-weight:bold; margin-bottom:20px;">Esquema Representativo</h3>
+
+          <!-- imagen -->
+          <div style="text-align:center; margin-top:20px;">
+            <img src="IMAGEN/ARQUITECTURAWEB.jpeg"
+              style="width: 600px; height:auto; border:4px solid #BF2A70; border-radius:8px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!--Acordeon-->
+    <a id="tiposArquitecturaWeb"></a>
+    <div style="text-align:center; margin-top:20px;">
+      <h1 style="font-family:serif; color:#000000;">
+        <strong>Tipos de arquitecturas de web</strong>
+      </h1>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" style="background-color:#F2B6C6; color:black; font-family:serif;">
+
+            <strong>Monolítica</strong>
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            La arquitectura monolítica es <strong> un modelo de desarrollo en el que toda la aplicación web se construye
+              como una sola unidad o bloque de código.</strong> , es decir que todos los componentes de una aplicación
+            web
+            como:
+            <ul>
+              <li>La interfaz de usuario.</li>
+              <li>La lógica de negocio.</li>
+              <li>El acceso a la base de datos.</li>
+            </ul>
+            Están integrados en un único proyecto y se despliegan como una sola aplicación.
+            Por <strong>ejemplo</strong>, un solo servidor maneja la web, el carrito y los pagos es fácil de iniciar,
+            pero difícil de escalar.
+            <br>
+            <center>
+              <img src="IMAGEN/MONOLITICO.png" width="400" height="300" style="border:4px solid #BF2A70;">
+            </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" style="background-color:#F2B6C6; color:black; font-family:serif;">
+            <strong>Microservicios</strong>
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            En el desarrollo web, la arquitectura de microservicios es <strong>un enfoque donde una aplicación se divide
+              en pequeños servicios independientes </strong>, cada uno encargado de una función específica del sistema.
+            <br>
+            <strong>Cada microservicio:</strong>
+            <br>
+            <ul>
+              <li>Tiene su propia lógica de negocio.</li>
+              <li>Puede tener su propia base de datos.</li>
+              <li>Se despliega de forma independiente.</li>
+              <li>Se comunica con otros servicios mediante APIs (normalmente HTTP/REST).</li>
+            </ul>
+            Por <strong>ejemplo</strong>,funciones independientes como usuarios, productos, pagos ya que ermite escalar
+            y
+            actualizar por módulos, aunque es más complejo de implementar.
+            <br>
+            <center>
+              <img src="IMAGEN/MICROSERVICIOS.png" width="400" height="300" style="border:4px solid #BF2A70;">
+            </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" style="background-color:#F2B6C6; color:black; font-family:serif;">
+            <strong>Sin servidor</strong>
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            En el desarrollo web, la arquitectura sin servidor (Serverless) es <strong>un modelo donde el desarrollador
+              no
+              administra directamente los servidores </strong> ,en su lugar, un proveedor en la nube se encarga de la
+            infraestructura y ejecuta el código solo cuando es necesario.Aunque el nombre dice “sin servidor”, sí
+            existen
+            servidores, pero están gestionados automáticamente por el proveedor,por ende:
+            <ul>
+              <li>No se administran servidores manualmente.</li>
+              <li>Ejecución basada en eventos (por ejemplo, cuando un usuario hace una solicitud).</li>
+              <li>Escalado automático.</li>
+              <li>Pago por uso (solo se paga cuando el código se ejecuta).</li>
+            </ul>
+            Por <strong> ejemplo</strong>,Funciones que se ejecutan solo cuando se necesitan, como guardar una orden o
+            enviar un correo. Pago por uso y sin servidores permanentes.
+            <br>
+            <center>
+              <img src="IMAGEN/SIN SERVIDOR.png" width="400" height="300" style="border:4px solid #BF2A70;">
+            </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFourt" style="background-color:#F2B6C6; color:black; font-family:serif;">
+            <strong>Arquitectura de tres capas</strong>
+          </button>
+        </h2>
+        <div id="flush-collapseFourt" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            La arquitectura de tres capas es <strong> un modelo de diseño de software que divide una aplicación en tres
+              niveles o capas independientes, cada una con una responsabilidad específica </strong> ,esto permite una
+            mejor organización, mantenimiento y escalabilidad del sistema.
+            <br>
+            Las tres capas son:
+            <br>
+            <ol>
+              <li><strong>Capa de Presentación</strong></li>
+              Es la interfaz con la que interactúa el usuario.
+              <ul>
+                <li>Formularios.</li>
+                <li>Botones.</li>
+                <li>Páginas web.</li>
+                <li>Aplicaciones móviles.</li>
+              </ul>
+              Aquí se usan tecnologías como HTML, CSS, JavaScript o frameworks de frontend.
+
+
+              <br>
+
+              <li><strong>Capa de Lógica de Negocio</strong></li>
+              También llamada capa de aplicación.
+              <ul>
+                <li>Procesa datos.</li>
+                <li>Aplica reglas del negocio.</li>
+                <li>Toma decisiones.</li>
+              </ul>
+              Por ejemplo, validar un usuario o calcular el total de una compra , y puede desarrollarse con frameworks
+              como Spring Boot, Django o Laravel.
+
+
+              <br>
+
+              <li><strong>Capa de Datos</strong></li>
+              Se encarga de almacenar y gestionar la información.
+              <ul>
+                <li>Bases de datos.</li>
+                <li>Consultas./li>
+                <li>Conexiones.</li>
+              </ul>
+              Ejemplos: MySQL, PostgreSQL, SQL Server, etc.
+            </ol>
+            <br>
+            Por<strong>ejemplo</strong>,la división en frontend (catálogo), backend (procesa pedidos) y base de datos
+            (productos y órdenes) es la organización clara y mantenimiento sencillo.
+            <br>
+            <center>
+              <img src="IMAGEN/ARQUITECTURA DE TRES CAPAS.png" width="400" height="300"
+                style="border:4px solid #BF2A70;">
+            </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive" style="background-color:#F2B6C6; color:black; font-family:serif;">
+            <strong>Modelo-Vista-Controlador</strong>
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            El Modelo-Vista-Controlador (MVC) es <strong>un patrón de arquitectura que organiza una aplicación web en
+              tres
+              partes</strong> como lo son el modelo,vista y controlador , que cumplen la siguiente funcion:
+            <br>
+            <ul>
+              <li><strong>Modelo:</strong> Maneja los datos y la lógica.</li>
+              <li><strong>Vista:</strong> Muestra la información al usuario.</li>
+              <li><strong>Controlador:</strong> Recibe las acciones del usuario y conecta el Modelo con la Vista.</li>
+            </ul>
+            Esto permite que la aplicación sea más ordenada, fácil de mantener y escalable.Por <strong>ejemplo</strong>,
+            modelo (productos y órdenes), vista (página web) y controlador (gestión de compras) , este separa la lógica
+            de la presentación.
+            <br>
+            <center>
+              <img src="IMAGEN/MODELO VISTA CONTROLADOR.png" width="400" height="300" style="border:4px solid #BF2A70;">
+            </center>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSix" style="background-color:#F2B6C6; color:black; font-family:serif;">
+            <strong>Single Page Aplicattion</strong>
+          </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Una Single Page Application (SPA) o aplicación de <strong> una sola página es un tipo de aplicación web en
+              la
+              que toda la interacción ocurre dentro de una sola página web</strong>, sin que sea necesario recargarla
+            completamente cada vez que el usuario navega o realiza una acción , es decir que en lugar de cargar páginas
+            nuevas desde el servidor realiza los siguientes pasos:
+            <br>
+            <ol>
+              <li>El SPA actualiza dinámicamente.</li>
+              <li>Luego utiliza el contenido usando JavaScript.</li>
+              <li>Crea una experiencia más rápida y fluida, similar a la de una aplicación de escritorio o móvil.</li>
+            </ol>
+            Por <strong>ejemplo</strong>,toda la tienda en una sola página ,filtrar productos o agregar al carrito sin
+            recargar la página permite
+            una navegación rápida y dinámica.
+            <br>
+            <center>
+              <img src="IMAGEN/SPA.png" width="400" height="300" style="border:4px solid #BF2A70;">
+            </center>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSeven" style="background-color:#F2B6C6; color:black; font-family:serif;">
+            <strong>Progressive web applicattion</strong>
+          </button>
+        </h2>
+        <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Una Progressive Web Application (PWA) o aplicación web progresiva es <strong> un tipo de aplicación web que
+              combina lo mejor de las páginas web y las aplicaciones móviles nativas </strong> .Es decir, la abres desde
+            el navegador pero ofrece funciones típicas de una aplicación instalada en tu celular o computador.No
+            necesitas
+            descargarla desde una tienda de aplicaciones, pero puedes:
+            <ul>
+              <li>Instalarla en tu dispositivo</li>
+              <li>Usarla sin internet (en muchos casos)</li>
+              <li>Recibir notificaciones</li>
+              <li>Abrirla en pantalla completa como una app</li>
+            </ul>
+            Por <strong> ejemplo </strong>, La tienda se instala como app, funciona offline y envía notificaciones es
+            una xperiencia similar a app móvil.
+            <br>
+            <center>
+              <img src="IMAGEN/PWA.png" width="400" height="300" style="border:4px solid #BF2A70;">
+            </center>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseEight" style="background-color:#F2B6C6; color:black; font-family:serif;">
+            <strong>Arquitectura limpia/Hexagonal</strong>
+          </button>
+        </h2>
+        <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            La arquitectura limpia, también conocida como arquitectura hexagonal, es <strong>un estilo de diseño de
+              software que busca separar claramente las responsabilidades del sistema </strong> para hacerlo:
+            <ul>
+              <li>Mantenible.</li>
+              <li>Probable</li>
+              <li>Escalable</li>
+            </ul>
+            En este modelo, el núcleo de la aplicación contiene la lógica de negocio pura, independiente de frameworks,
+            bases de datos o interfaces de usuario.Por <strong>ejemplo</strong>,
+            la lógica de negocio está aislada del frontend y base de datos , esto permite cambiar diseño o datos sin
+            afectar la lógica, fácil de mantener.
+            <br>
+            <center>
+              <img src="IMAGEN/ARQUITECTURA LIMPIA.png" width="400" height="300" style="border:4px solid #BF2A70;">
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!--enlace de la base de datos-->
+    <div>
+      <h2 style="font-family: 'Times New Roman', Times, serif;"><i>Bases de datos</i></h2>
+      <h5 style="font-family: serif;">
+        <i>Recuerda visitar nuestra base de datos UNIMAYOR para mayor informacion: 
+          <a href="https://unimayor.edu.co/web/biblioteca" target="_blank">Biblioteca</a>
+        </i>
+        <hr>
+        <i>Recuerda visitar informacion academica como GOOGLE ACADEMICO: 
+          <a href="https://scholar.google.com/?hl=es"target="_blank">Google academico</a>
+        </i>
+      </h5>
+    </div>
+
+  <!--pie de pagina-->
+  <div style="background-color:#F2B6C6; margin-top:40px; border-top:6px solid #D8F0F2; font-family:serif;">
+
+    <div class="container py-4">
+
+      <div class="row text-center text-md-start">
+
+        <!-- Informacion academica -->
+        <div class="col-md-6 mb-3">
+          <h5 style="font-weight:bold;">Sobre la autora</h5>
+          <p style="margin:0;">
+            <strong>Karol Tatiana Ibarra</strong><br>
+            Estudiante de quinto semestre de Desarrollo de Software.
+          </p>
+        </div>
+
+        <!-- Contacto -->
+        <div class="col-md-6 mb-3">
+          <h5 style="font-weight:bold;">Contacto</h5>
+
+          <!-- Enlace directo al correo -->
+          <p style="margin:0;">
+            <a href="mailto:kt.ibarra@unimayor.edu.co" style="text-decoration:none; color:inherit;">
+              kt.ibarra@unimayor.edu.co
+            </a>
+          </p>
+
+          <!-- Enlace directo al teléfono -->
+          <p style="margin:0;">
+            <a href="tel:+573169195728" style="text-decoration:none; color:inherit;">
+              316 919 5728
+            </a>
+          </p>
+        </div>
+      </div>
+      <hr style="border-color:#000000;">
+
+    <!-- Linea inferior -->
+      <div class="text-center">
+        <p style="margin:0; font-size:0.95rem;">
+          © 2026 Proyecto Académico – Arquitectura Web y Arquitectura Frontend.
+          <br>
+          <marquee>Diseño desarrollado con Bootstrap 5 y HTML basico.</marquee>:
+        </p>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

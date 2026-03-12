@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformacion </title>
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+    <link rel="stylesheet" href="/CSS/TRANSFORMACION.CSS">
+</head>
+
+<body>
+    <header>
+        <h1>Transformacion</h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li>📞 3169195728</li>
+            <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+    <!--SECTION-->
+    <section id="contenedor-bordes">
+
+            <article id="bordes-intro">
+            <header>
+                <h1>Transformacion</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li> Transformacion </li>
+                    <li>Desplazamiento</li>
+                    <li>Rotacion</li>
+                    <li>Escala</li>
+                    <li>Sesgo</li>
+                    <li>Multiples Transformaciones</li>
+                    <li>Compatibilidad con navegadores</li>
+                </ul>
+                <p>
+                Con HTML5 y CSS3 podemos utilizar la propiedad 'transform' para modificar características de un <div> como la posición (position), la rotación (rotation), la escala (scale) o el -menos utilizado- el sesgo (skew).
+                Este cambio de posición, tamaño o rotación se produce al instante (no hay animación en este cambio, para ello habría que utilizar 'transition' o 'animation').
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+  
+        <!-- DESPLAZSAMIENTO -->
+            <article id="transformacionDesplazamiento">
+
+                <header>
+                    <h2>Desplazamiento</h2>
+                </header>
+
+                <p>
+                El movimiento se basa en la suma o resta de píxeles en su posición horizontal y vertical respecto a la posición en la que se encuentra el objeto en este momento.
+                </p>
+
+                <ul>
+                    <li>Con números positivos se desplaza el objeto hacia la derecha y hacia abajo</li>
+                    <li>Con números negativos se desplaza hacia arriba y hacia la izquierda.</li>
+                </ul>
+
+           <div class="ejemplo-codigo">
+
+            <p><strong>Ejemplo de transformacion:</strong></p>
+
+            <pre>
+            martillo{
+            transform:translate(200px,5px);
+            }
+            </pre>
+            <br>
+            <p>
+                También es posible utilizar porcentajes, si queremos colocar este martillo en la mitad horizontal de la pantalla (osea 'centrar el martillo horizontalmente') podemos indicar un porcentaje (50%), en vez de utilizar píxeles.
+            </p>
+            <br>
+            <pre>
+            #martillo{
+            transform:translate(50%,0px);
+            }
+            </pre>
+            </div>
+
+            <div class="ejemplo">
+                <p><strong>Resultado:</strong></p>
+
+               <img id="mariposaDesplazamiento" src="/IMAGEN/MARIPOSA.png" alt="Mariposa">
+
+                </div>
+
+        </article>
+
+        <!-- ROTACION -->
+            <article id="transformacionRotacion">
+
+                <header>
+                    <h2>Rotacion</h2>
+                </header>
+
+                <p>
+                La rotación se basa en los grados de rotación (de 0º a 360º). El eje de rotación siempre está situado en el centro del <div> y los grados se especifican añadiendo 'deg' después del valor (por ejemplo: 90deg).
+                </p>
+                <br>
+                <p>
+                   Si se indican valores positivos en los grados de rotación, el objeto rota hacia la derecha. Con los grados especificados en números negativos, el objeto rota hacia la izquierda. (Así, teniendo en cuenta que una vuelta entera equivale a 360º, se aprecia el mismo resultado con 350deg, que con -10deg).
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de transformacion:</strong></p>
+
+                <pre>
+                #martillo{
+                transform:rotate(90deg);
+                }
+                </pre>
+
+                </div>
+
+                <div class="ejemplo">
+                    <p><strong>Resultado:</strong></p>
+
+                    <img id="mariposaRotacion" src="/IMAGEN/MARIPOSA.png" alt="Mariposa">
+
+                    </div>
+                
+        </article>
+
+        
+        <!-- ESCALA -->
+            <article id="transformacionEscala">
+
+                <header>
+                    <h2>Escala</h2>
+                </header>
+
+                <p>
+                La escala de un objeto se basa en una escala horizontal, seguida de la vertical, siendo 1 la escala original (correspondiente al tamaño original).
+                Para obtener un porcentaje se puede multiplicar el valor indicado por 100, así un valor de '2' (2x100=200) representaría un 200%, osea el doble de tamaño.
+                </p>
+                <br>
+                <p>
+               Aumenta o disminuye de tamaño tomando como eje el centro del div
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de transformacion:</strong></p>
+
+                <pre>
+                #martillo{
+                transform:scale(2,1.75);
+                }
+                </pre>
+                <br>
+                <p>
+                    En este caso, el <div> del martillo aumenta de tamaño no proporcionalmente. Aumenta el doble de anchura (2x100= 200%) y tan solo un 175% de altura (1.75x100= 175%).
+                </p>
+                </div>
+
+                <div class="ejemplo">
+                    <p><strong>Resultado:</strong></p>
+                    <br>
+                    <img id="mariposaEscala" src="/IMAGEN/MARIPOSA.png" alt="Mariposa">
+
+                    </div>
+        </article>
+    
+       <!-- SESGO -->
+            <article id="transformacionSesgo">
+
+                <header>
+                    <h2>Sesgo</h2>
+                </header>
+
+                <p>
+                Para definir el sesgo se indica primero el sesgo horizontal y posteriormente el vertical.
+                Se pueden utilizar valores o positivos según se requiera para la deformación.
+                </p>
+                <br>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de transformacion:</strong></p>
+
+                <pre>
+                #martillo{
+                transform:skew(10,25);
+                }
+                </pre>
+                <br>
+                </div>
+
+                <div class="ejemplo">
+                    <p><strong>Resultado:</strong></p>
+                    <br>
+                    <img id="mariposaSesgo" src="/IMAGEN/MARIPOSA.png" alt="Mariposa">
+                    </div>
+        </article>
+
+        <!-- MULTIPLE TRANSFORMACION -->
+            <article id="transformacionMultiple">
+
+                <header>
+                    <h2>Multiple Transformacion</h2>
+                </header>
+
+                <p>
+                    Se pueden indican tantas transformaciones como se deseen de manera simultáneamente separando cada una de ellas por un espacio.
+                </p>
+                <br>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de transformacion:</strong></p>
+
+                <pre>
+                #martillo{
+                transform:translate(200px, 0px) rotate(33deg) scale(0.5,0.5);
+                }
+                </pre>
+                <br>
+                <p>
+                En este ejemplo, al <div> del martillo se le aplica un desplazamiento hacia la derecha de 200 píxeles, al mismo tiempo una rotación hacia la derecha de 33 grados y finalmente una redución de tamaño proporcional del 50%.
+                </p>
+                </div>
+
+                <div class="ejemplo">
+                    <p><strong>Resultado:</strong></p>
+                    <br>
+                    <img id="mariposaMultiple" src="/IMAGEN/MARIPOSA.png" alt="Mariposa">
+                    </div>
+        </article>
+           
+        <!-- COMPATIBILIDAD DE NAVEGADORES -->
+            <article id="transformacionCompatibilidad">
+
+                <header>
+                    <h2>Compatibilidad de navegadores</h2>
+                </header>
+
+                <p>
+                   Para que estas transformaciones funcionen en todos los navegadores tenemos que repetir el código, anteponiendo los prefijos correspondientes a cada uno de los navegadores (-webkit-, -moz-, -ms- y -o-).
+                </p>
+                <br>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de transformacion:</strong></p>
+
+                <pre>
+               #martillo{
+                transform:translate(200px, 0px) rotate(33deg) scale(0.5,0.5);
+                -webkit-transform:translate(200px, 0px) rotate(33deg) scale(0.5,0.5);
+                -moz-transform:translate(200px, 0px) rotate(33deg) scale(0.5,0.5);
+                -o-transform:translate(200px, 0px) rotate(33deg) scale(0.5,0.5);
+                -ms-transform:translate(200px, 0px) rotate(33deg) scale(0.5,0.5);
+                }
+                </pre>
+                <br>
+                </div>
+
+                <div class="ejemplo">
+                    <p><strong>Resultado:</strong></p>
+                    <br>
+                    <img id="mariposaCompatibilidad" src="/IMAGEN/MARIPOSA.png" alt="Mariposa">
+                    </div>
+        </article>
+
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li>📞 Tel: 3169195728</li>
+                <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

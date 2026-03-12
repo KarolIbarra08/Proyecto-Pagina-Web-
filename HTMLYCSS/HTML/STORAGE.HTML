@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORAGE</title>
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+    <link rel="stylesheet" href="/CSS/STORAGE.CSS">
+</head>
+
+<body>
+    <header>
+        <h1>STORGAE</h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li>📞 3169195728</li>
+            <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+    
+        <!--SECTION-->
+    <section id="contenedor-bordes">
+
+            <article id="bordes-intro">
+            <header>
+                <h1>STORAGE</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li>STORAGE</li>
+                    <li>Tipos</li>
+                    <li>Palabras Magicas</li>
+                </ul>
+                <p>
+               En el contexto de HTML y JavaScript, un storage se refiere a un almacenamiento local en el navegador que permite guardar datos de manera persistente para que tu página web pueda recordarlos, incluso si cierras y vuelves a abrir el navegador.
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+  
+        <!-- STORAGE -->
+        <article id="storage">
+
+            <header>
+                <h2>STORAGE</h2>
+            </header>
+
+            <p>
+                Storage permite guardar información directamente en el navegador para usarla más tarde. Por ejemplo, si escribes tu nombre en un formulario y pulsas “Guardar”, el navegador recordará ese dato. La próxima vez que visites la página, podrá usarlo para saludarte automáticamente. Esto es útil para personalizar la experiencia del usuario sin necesidad de almacenar la información en un servidor o base de datos.
+            </p>
+
+            <br>
+
+        </article>
+
+        <!-- TIPOS -->
+        <article id="tiposStorage">
+
+            <header>
+                <h2>Tipos de STORAGE</h2>
+            </header>
+
+            <p>
+                Es posible guardar datos (locales) en el ordenador del usuario sin limitación de tiempo, sin que estos datos se borren en cada sesión, con una limitación de tamaño de hasta 5 Mb, sin tener que disponer de ningún servidor, ni base de datos y sin tener que utilizar cookies.
+            </p>
+
+            <br>
+
+            <p>
+                Existen dos tipos de almacenamiento (de corta y larga duración):
+            </p>
+
+            <br>
+
+            <ul>
+                <li>sessionStorage: Los datos guardados permanecen mientras el usuario tiene el navegador abierto. Al cerrar el navegador los datos se borran automáticamente.</li>
+                <li>localStorage: Los datos guardados permanecen siempre, incluso si se cierra el navegador y se apaga el ordenador.</li>
+            </ul>
+
+        </article>
+
+        <!-- PALABRAS MAGICAS -->
+        <article id="palabrasMagicas">
+
+            <header>
+                <h2>Palabras Magicas</h2>
+            </header>
+
+            <p>
+                En el siguiente aparatado encontraras las diferentes palabras magicas:
+            </p>
+
+            <br>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo de STORAGE :</strong></p>
+                <br>
+
+                <p>
+                    Guardar un dato
+                </p>
+                <ul>
+                    <li> localStorage (si los datos serán permanentes) o sessionStorage (si los datos se borrarán cuando el usuario cierre el navegador).</li>
+                    <li>Un nombre que le daremos a esa información (este valor sólo sirve para poder hacer referencia a ella).</li>
+                    <li>La información a guardar (normalmente escrita entre comillas).</li>
+                </ul>
+                <pre>
+                localStorage.nombre='Javier';
+                </pre>
+                <br>
+
+                <p>
+                    Recuperar la información
+                </p>
+                <ul>
+                    <li> localStorage (si los datos eran permanentes) o sessionStorage (si los datos tenían sólo vigencia dentro de la presente sesión).</li>
+                    <li>El nombre que le dimos a esa información cuando se guardó.</li>
+                    <li>Una variable donde guardar dicha información (o en su defecto un alert que muestre en pantalla dicha información).</li>
+                </ul>
+                <pre>
+                alert('La información recuperada ha sido '+ localStorage.nombre);
+                </pre>
+               <br>
+               <p>
+                El 'alert' sirve para que aparezca una ventana flotante de alerta con un texto que será 'La información recuperada ha sido ' más la información llamada nombre guardada en localStorage.
+               </p> 
+               <br>
+
+               <p>
+                Eliminar un dato: Para eliminar únicamente un dato utilizamos la orden 'localStorage.removeItem()':
+               </p>
+               <pre>
+                localStorage.removeItem('nombre');
+               </pre>
+               <br>
+
+               <p>
+                Eliminar todos los datos existentes:Con este código eliminamos todos los datos, tantos permanentes como los que tienen vigencia dentro de la presente sesión del navegador.
+                </p>
+                <pre>
+                localStorage.clear();
+                sessionStorage.clear();
+                </pre>
+                <br>
+
+                <p>
+                    Para conocer cuántos datos hay guardados:Ya, para rizar el rizo, podemos conocer cuántos elementos (permanentes o no) hay guardados utilizando el atributo '.length'.
+                </p>
+                <pre>
+                    alert('Hay ' + localStorage.length + 'elementos guardados');
+
+                </pre>
+                <br>
+                </div>
+
+    
+                <div class="ejemplo">
+                <p><strong>Resultado:</strong></p>
+
+                <div id="storageEjemplo">
+                    <label for="nombreUsuario">Escribe tu nombre:</label>
+                    <input type="text" id="nombreUsuario" placeholder="Tu nombre">
+                    <br><br>
+                    <button id="guardarNombre">Guardar</button>
+                    <button id="mostrarNombre">Mostrar</button>
+                    <button id="eliminarNombre">Eliminar</button>
+                    <p id="saludo"></p>
+                </div>
+            </div>
+
+        </article>
+
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li>📞 Tel: 3169195728</li>
+                <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+    <script src="/JAVASCRIPT/STORAGE.JS"> </script>
+
+</body>
+
+</html>

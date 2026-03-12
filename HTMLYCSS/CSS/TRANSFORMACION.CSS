@@ -1,0 +1,62 @@
+/* DESPLZAAMIENTO*/
+#mariposaDesplazamiento {
+    width: 100px; 
+    height: auto;
+    transform: translate(100px, 30px); 
+}
+
+/* ROTACION */
+#mariposaRotacion {
+    width: 100px;
+    height: auto;
+    transform: rotate(90deg); 
+    transition: transform 0.5s; 
+}
+
+/* ESCALA */
+#mariposaEscala {
+    width: 100px;         
+    height: auto;        
+    display: block;       
+    margin-top: 20px;
+    transform: scale(2, 1.75); 
+    transform-origin: center;  
+    transition: transform 0.5s; 
+}
+
+/* SESGO */
+#mariposaSesgo {
+    width: 100px;            
+    height: auto;           
+    display: block;
+    margin-top: 20px;
+    transform: skew(10deg, 25deg); 
+    transform-origin: center;       
+    transition: transform 0.5s;     
+}
+
+/* MULTIPLE TRANSFORMACION */
+#mariposaMultiple {
+    width: 100px;                 
+    height: auto;                 
+    display: block;
+    margin-top: 20px;
+    transform: translate(200px, 0px) rotate(33deg) scale(0.5, 0.5); 
+    transform-origin: center;     
+    transition: transform 0.5s;  
+}
+
+/* COMPATIBILIDAD DE NAVEGADORES */
+#mariposaCompatibilidad {
+    width: 100px;                    
+    height: auto;                    
+    display: block;
+    margin-top: 20px;
+    transform: translate(200px, 0px) rotate(33deg) scale(0.5, 0.5);
+    -webkit-transform: translate(200px, 0px) rotate(33deg) scale(0.5, 0.5);
+    -moz-transform: translate(200px, 0px) rotate(33deg) scale(0.5, 0.5);
+    -o-transform: translate(200px, 0px) rotate(33deg) scale(0.5, 0.5);
+    -ms-transform: translate(200px, 0px) rotate(33deg) scale(0.5, 0.5);
+    transform-origin: center;         
+    transition: transform 0.5s;       
+}

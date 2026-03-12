@@ -1,0 +1,20 @@
+#googleMapsArticulo{
+    margin-top:40px;
+}
+
+.ejemplo{
+    margin-top:20px;
+    text-align:center;
+}
+
+.mapa{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+}
+
+.mapa iframe{
+    border:0;
+    width:640px;
+    height:510px;
+}

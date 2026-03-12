@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes y Lineas </title>
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+    <link rel="stylesheet" href="/CSS/CAJAS.CSS">
+</head>
+
+<body>
+    <header>
+        <h1>Bordes Redondeados y Lineas en CSS</h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li>📞 3169195728</li>
+            <li>✉️ <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+
+        <!--SECTION-->
+    <section id="contenedor-bordes">
+
+            <article id="bordes-intro">
+            <header>
+                <h1>Cajas Flotantes</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li>Uso del float </li>
+                    <li>Ejemplo del float</li>
+                    <li>Clean del float</li>
+                </ul>
+                <p>
+                  En CSS, las cajas flotantes son elementos a los que se les aplica la propiedad float para que se desplacen hacia la izquierda o hacia la derecha dentro de su contenedor, permitiendo que otros elementos (como el texto) se coloquen alrededor de ellos.
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+  
+        <!-- USOS DEL FLOAT -->
+            <article id="uso-float">
+
+                <header>
+                    <h2>Usos del Float</h2>
+                </header>
+
+                <p>
+                La propiedad float sirve para alinear cajas o <divs> a la izquierda o a la derecha de otras cajas, utilizando el valor float:left o float:right.
+                <br>
+                Al usar float hay que tener claro una serie de cuestiones:
+                </p>
+
+                <ul>
+                    <li>Para alinear varias cajas (o divs) una a la derecha de la otra, todas las cajas tienen que tener un width determinado y un float.</li>
+                    <li>La suma de todos los width de todas las cajas deben caber en el ancho del <body>. Si no caben se pondrá una debajo de la otra.</li>
+                    <li>Por lo general, en todas las cajas se utiliza el mismo tipo de alineación (o todas left o todas right).</li>
+                    <li>Aunque se quiera colocar una caja a la derecha de otra, se utiliza float:left, ya que el valor right indica que las cajas se alinearán desde la parte derecha de la ventana del navegador.</li>
+                    <li>La siguiente caja que venga después de la última caja que utiliza un float, (aunque no tenga ningún valor float), se alineará en el espacio vacio que deje la alineación anterior. Para evitar esto, a esta nueva caja se le debe añadir la declaración: clear:both;. De esta manera no aprovechará el espacio vacio que pudiera quedar y se colocará correctamente debajo de la última caja.</li>
+                </ul>
+            </article>
+     
+
+         <!-- EJEMPLO PRACTICO -->
+
+        <article id="ejemplo-practico">
+
+            <header>
+                <h2>Ejemplo Practico</h2>
+            </header>
+
+            <p>
+                Tenemos dos cajas (<code>divs</code>), etiquetadas con los id="caja1" e id="caja2". La primera (#caja1) contiene una imagen de 200 x 133 píxeles, mientras que #caja2 contiene un texto centrado verticalmente.
+            </p>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo CSS de cajas</strong></p>
+                <p>
+                    Para que ambas cajas no se sitúen una debajo de la otra (como es lo habitual), tenemos que añadir un width y un float a cada caja:
+                </p>
+                <pre>
+                #caja1{
+                    width:200px;
+                    float:left;
+                    margin-right:15px;
+                    }
+                    #caja2{
+                    width:200px;
+                    float:left;
+                    }
+                </pre>
+            </div>
+            <br>
+
+           <div class="ejemploCajas">
+
+            <div id="caja1">
+                <img src="/IMAGEN/FLOAT.webp" width="200" height="133">
+            </div>
+
+            <div id="caja2">
+                <p>
+                Este es un ejemplo de texto dentro de la segunda caja. 
+                Ambas cajas están alineadas usando la propiedad 
+                <code>float</code> en CSS.
+                </p>
+            </div>
+
+        </div>
+        </article>
+
+        <!-- CLEAR BOTH -->
+ 
+        <article id="seccion-clear">
+
+            <header>
+                <h2>Clear:Both</h2>
+            </header>
+
+            <p>
+               La mayoría de problemas de colocación que se producen al utilizar la propiedad float se pueden solucionar de dos maneras:
+
+            <p>Tipos de clear :</p>
+            
+            <div class="ejemplo-codigo">
+
+            <p><strong>Ejemplo CSS de diferentes clear:</strong></p>
+
+            <ul>
+
+                <li>
+                    <strong>Ejemplo uno:</strong>
+
+                    <pre>
+                    #caja_descolocada{
+                        clear: both;
+                    }
+                    </pre>
+
+                    <p>
+                    Utilizando <code>clear:both</code> es una solución sencilla pero muy efectiva. 
+                    Si a la primera caja que viene después de un elemento con <code>float</code> 
+                    se le aplica <code>clear:both</code>, no aprovechará el espacio libre y 
+                    se colocará debajo de la caja anterior.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>Ejemplo dos:</strong>
+
+                    <pre>
+                    &lt;div id="cajas"&gt;
+                        &lt;div id="caja1"&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="caja2"&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    </pre>
+                    <br>
+                    <p>
+                    A esta estructura HTML le tenemos que añadir los correspondientes selectores CSS:
+                    </p>
+                    <br>
+                    <pre>
+                   #cajas{
+                    height:131px;
+                    }
+                    #caja1{
+                    width:395px;
+                    float:left;
+                    margin-right:15px;
+                    }
+                    #caja2{
+                    width:300px;
+                    float:left;
+                    }
+                    </pre>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div id="multiplesCajas">
+
+            <div id="caja3">
+                <img src="/IMAGEN/FLOAT.webp" width="200" height="133">
+            </div>
+
+            <div id="caja4">
+                <p>
+                Este es un ejemplo de texto dentro de la segunda caja. 
+                Ambas cajas están alineadas usando la propiedad 
+                <code>float</code> en CSS.
+                </p>
+            </div>
+
+        </div>
+    </article> 
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li>📞 Tel: 3169195728</li>
+                <li>✉️ Correo: <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li>💻 GitHub: <a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li>🌐 Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+
+    
+</body>
+
+</html>

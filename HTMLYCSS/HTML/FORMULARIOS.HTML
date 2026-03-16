@@ -216,55 +216,61 @@
             </div>
             <br>
 
-                <!-- BLOQUE DE EJEMPLO VISUAL -->
+        <!-- RESULTADO VISUAL -->
         <div class="ejemplo">
-            <p><strong>Resultado visual:</strong></p>
 
-            <div id="etiquetaFormulario">
-                <form id="form-visual">
-                    <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" autofocus required>
-                    </div>
+        <p><strong>Resultado visual:</strong></p>
 
-                    <div class="form-group">
-                        <label for="password">Contraseña:</label>
-                        <input type="password" id="password" name="password" placeholder="Escribe tu contraseña" required>
-                    </div>
+        <div id="etiquetaFormulario">
 
-                    <div class="form-group">
-                        <label for="mail">Correo:</label>
-                        <input type="email" id="mail" name="mail" placeholder="usuario@dominio.com" required>
-                    </div>
+        <form id="form-principal" method="post" action="../PHP/procesar_formulario.php">
 
-                    <div class="form-group">
-                        <label for="nacimiento">Fecha de nacimiento:</label>
-                        <input type="date" id="nacimiento" name="nacimiento" value="2000-01-01">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="adiccion">¿Cuántos cómics lees a la semana?:</label>
-                        <input type="range" id="adiccion" name="adiccion" min="1" max="7" value="2">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="color_preferido">Color favorito:</label>
-                        <input type="color" id="color_preferido" name="color_preferido" value="#FF0000">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="comics">Cantidad de cómics:</label>
-                        <input type="number" id="comics" name="comics" min="100" max="9000" value="100">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="submit" value="Enviar los datos">
-                    </div>
-                </form>
-            </div>
+        <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" autofocus required>
         </div>
 
-    </article>
+        <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" placeholder="Escribe tu contraseña" required>
+        </div>
+
+        <div class="form-group">
+        <label for="mail">Correo:</label>
+        <input type="email" id="mail" name="mail" placeholder="usuario@dominio.com" required>
+        </div>
+
+        <div class="form-group">
+        <label for="nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="nacimiento" name="nacimiento" value="2000-01-01">
+        </div>
+
+        <div class="form-group">
+        <label for="adiccion">¿Cuántos cómics lees a la semana?:</label>
+        <input type="range" id="adiccion" name="adiccion" min="1" max="7" value="2">
+        </div>
+
+        <div class="form-group">
+        <label for="color_preferido">Color favorito:</label>
+        <input type="color" id="color_preferido" name="color_preferido" value="#FF0000">
+        </div>
+
+        <div class="form-group">
+        <label for="comics">Cantidad de cómics:</label>
+        <input type="number" id="comics" name="comics" min="100" max="9000" value="100">
+        </div>
+
+        <div class="form-group">
+        <input type="submit" value="Enviar los datos">
+        <input type="reset" value="Limpiar formulario">
+        </div>
+
+        </form>
+
+        </div>
+        </div>
+
+        </article>
 
     <!-- BOTONES E IMPUT -->
       
@@ -336,49 +342,73 @@
 
         <!-- BLOQUE DE EJEMPLO VISUAL -->
         <div class="ejemplo">
+
         <p><strong>Resultado visual:</strong></p>
 
         <div id="inputsVisual">
-            <form id="form-visual">
-                
-                <!-- BUTTON -->
-                <div class="form-group">
-                    <label for="boton1">Inicio</label>
-                    <input type="button" value="Vótame" id="boton1">
-                </div>
 
-                <!-- CHECKBOX -->
-                <div class="form-group">
-                    <label>Lugares que has visitado</label>
-                    <label><input type="checkbox" name="destino1" value="Damasco"> Damasco (Siria)</label>
-                    <label><input type="checkbox" name="destino2" value="Kabul" checked> Kabul (Afganistán)</label>
-                    <label><input type="checkbox" name="destino3" value="Belgrado"> Belgrado (Serbia)</label>
-                </div>
+        <form id="form-inputs" method="get" action="../PHP/procesar_inputs.php">
 
-                <!-- FILE -->
-                <div class="form-group">
-                    <label for="fichero">File:</label>
-                    <input type="file" name="fichero" accept="image/*">
-                </div>
-
-                <!-- RADIO -->
-                <div class="form-group">
-                    <label>Genero:</label>
-                    <label><input type="radio" name="sexo" value="Mujer" checked> Mujer</label>
-                    <label><input type="radio" name="sexo" value="Hombre"> Hombre y sus derivados</label>
-                    <label><input type="radio" name="sexo" value="NS/NC"> No estoy muy seguro/a</label>
-                </div>
-
-                <!-- TEL -->
-                <div class="form-group">
-                    <label for="telefono">Tel:</label>
-                    <input type="tel" name="telefono" placeholder="+57 300 0000000">
-                    </div>
-                </form>
-            </div>
+        <div class="form-group">
+        <label for="boton1">Inicio</label>
+        <input type="button" value="Vótame" id="boton1">
         </div>
 
-    </article>
+        <div class="form-group">
+        <label>Lugares que has visitado</label>
+
+        <label>
+        <input type="checkbox" name="destino1" value="Damasco"> Damasco (Siria)
+        </label>
+
+        <label>
+        <input type="checkbox" name="destino2" value="Kabul" checked> Kabul (Afganistán)
+        </label>
+
+        <label>
+        <input type="checkbox" name="destino3" value="Belgrado"> Belgrado (Serbia)
+        </label>
+
+        </div>
+
+        <div class="form-group">
+        <label for="fichero">Archivo:</label>
+        <input type="file" name="fichero" accept="image/*">
+        </div>
+
+        <div class="form-group">
+        <label>Genero:</label>
+
+        <label>
+        <input type="radio" name="sexo" value="Mujer" checked> Mujer
+        </label>
+
+        <label>
+        <input type="radio" name="sexo" value="Hombre"> Hombre
+        </label>
+
+        <label>
+        <input type="radio" name="sexo" value="NS/NC"> No estoy seguro/a
+        </label>
+
+        </div>
+
+        <div class="form-group">
+        <label for="telefono">Tel:</label>
+        <input type="tel" name="telefono" placeholder="+57 300 0000000">
+        </div>
+
+        <div class="form-group">
+        <input type="submit" value="Enviar selección">
+        <input type="reset" value="Restablecer">
+        </div>
+
+        </form>
+
+        </div>
+        </div>
+
+        </article>
 
 
     <!-- BOTONES E IMPUT -->
@@ -435,43 +465,42 @@
         </div>
 
          <!-- BLOQUE DE EJEMPLO VISUAL -->
-    <div class="ejemplo">
-        <p><strong>Resultado visual:</strong></p>
+        <div class="ejemplo">
 
-        <div id="inputsVisual">
-            <form id="form-visual">
+            <p><strong>Resultado visual:</strong></p>
 
-                <!-- NOMBRE -->
-                <div class="form-group">
-                    <label for="nombre">Nombre (obligatorio):</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
-                </div>
+            <div id="inputsVisual">
 
-                <!-- EMAIL -->
-                <div class="form-group">
-                    <label for="email">Correo electrónico (obligatorio):</label>
-                    <input type="email" id="email" name="email" placeholder="usuario@dominio.com" required>
-                </div>
+            <form id="form-validacion" method="post" action="../PHP/validar_datos.php">
 
-                <!-- TEL -->
-                <div class="form-group">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="+57 300 0000000">
-                </div>
+            <div class="form-group">
+            <label for="nombre2">Nombre (obligatorio):</label>
+            <input type="text" id="nombre2" name="nombre" placeholder="Escribe tu nombre" required>
+            </div>
 
-                <div class="form-group">
-                    <input type="submit" value="Enviar">
-                </div>
+            <div class="form-group">
+            <label for="email">Correo electrónico (obligatorio):</label>
+            <input type="email" id="email" name="email" placeholder="usuario@dominio.com" required>
+            </div>
+
+            <div class="form-group">
+            <label for="telefono2">Teléfono:</label>
+            <input type="tel" id="telefono2" name="telefono" placeholder="+57 300 0000000">
+            </div>
+
+            <div class="form-group">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+            </div>
 
             </form>
-        </div>
-    </div>
 
-</article>
+            </div>
+            </div>
 
+            </article>
 
-</section>
-
+            </section>
 
 
       <!-- FOOTER-->

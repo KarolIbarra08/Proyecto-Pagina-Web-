@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGENES</title>
+    <link rel="stylesheet" href="/CSS/IMAGENES.css">
+    <link rel="stylesheet" href="/CSS/ESTILO.CSS">
+</head>
+
+<body>
+    <header>
+        <h1>Imagenes de Fondo </h1>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="BORDES.HTML">Bordes</a></li>
+            <li><a href="SOMBRAS.HTML">Sombras</a></li>
+            <li><a href="CAJAS.HTML">Cajas Flotantes</a></li>
+            <li><a href="POSICION.HTML">Posicion</a></li>
+            <li><a href="TRANSFORMACION.HTML">Transformacion</a></li>
+            <li><a href="FORMULARIOS.HTML">Formularios</a></li>
+            <li><a href="TRANSICIONES.HTML">Transiciones</a></li>
+            <li><a href="FRAME.HTML">Frame</a></li>
+            <li><a href="COLUMNA.HTML">Columna</a></li>
+            <li><a href="VIDEO.HTML">Video</a></li>
+            <li><a href="AUDIO.HTML">Audio</a></li>
+            <li><a href="TRANSPARENCIAS.HTML">Transparencia</a></li>
+            <li><a href="ANIMACION.HTML">Animacion</a></li>
+            <li><a href="SVG.HTML">SVG</a></li>
+            <li><a href="RESPONSIVE.HTML">Responsive</a></li>
+            <li><a href="EDITABLE.HTML">Contenido editable</a></li>
+            <li><a href="STORAGE.HTML">Storage</a></li>
+            <li><a href="IMAGENES.HTML">Imagenes</a></li>
+
+        </ul>
+    </nav>
+    <hr>
+    <!-- BOTON PARA ABRIR ASIDE -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" id="btn-sidebar">&#9776; Menú</label>
+
+    <!-- ASIDE -->
+    <aside id="aside-informativo">
+        <label for="toggle-sidebar" id="btn-close">&times;</label>
+        <br>
+        <br>
+        <br>
+        <h3>Información Complementaria</h3>
+        <p>Este apartado puede contener enlaces, tips, recursos o noticias relacionadas con HTML5 y CSS.</p>
+
+        <h4>Enlaces útiles</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="inicio.HTML" target="_blank">Ir al inicio</a></li>
+        </ul>
+
+        <h4>Contacto</h4>
+        <ul>
+            <li><img src="../FAVICON/favicon_phone_16.ico"> 3169195728</li>
+            <li><img src="../FAVICON/favicon_mail_16.ico"> <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+        </ul>
+    </aside>
+
+    
+        <!--SECTION-->
+    <section id="contenedor-bordes">
+
+            <article id="bordes-intro">
+            <header>
+                <h1>Imagenes de Fondo</h1>
+            </header>
+
+            <nav id="indice-articulo">
+                <ul>
+                    <li>Palabras Magicas</li>
+                    <li>Superposicion</li>
+                    <li>Extras</li>
+
+                </ul>
+                <p>
+                En CSS, las imágenes de fondo son imágenes que se colocan detrás del contenido de un elemento HTML (como un div, body, section, etc.) para decorar o mejorar el diseño de una página web.
+                </p>
+            </nav>
+        </article>
+
+        <hr>
+  
+        <!-- PALABRAS MAGICAS -->
+        <article id="palabrasMagicas">
+
+        <header>
+        <h2>Palabras Magicas</h2>
+        </header>
+
+        <p>
+        En HTML5 existen propiedades CSS que permiten añadir fondos de página,
+        ya sea con colores, imágenes o repeticiones de imágenes.
+        </p>
+
+
+        <!-- COLOR DE FONDO -->
+        <h3>Color de fondo</h3>
+
+        <div class="ejemplo-codigo">
+        <pre>
+        background-color: rgba(255,255,0,0.4);
+        </pre>
+        </div>
+
+        <div class="ejemplo">
+        <p><strong>Resultado:</strong></p>
+        <div class="ejemplo-color"></div>
+        </div>
+
+
+
+        <!-- IMAGEN DE FONDO -->
+        <h3>Imagen de fondo</h3>
+
+        <div class="ejemplo-codigo">
+        <pre>
+        background:url('../imagenes/imagen.png');
+        </pre>
+        </div>
+
+        <div class="ejemplo">
+        <p><strong>Resultado:</strong></p>
+        <div class="ejemplo-imagen"></div>
+        </div>
+
+
+
+        <!-- REPEAT X -->
+        <h3>Repeat horizontal</h3>
+
+        <div class="ejemplo-codigo">
+        <pre>
+        background-repeat: repeat-x;
+        </pre>
+        </div>
+
+        <div class="ejemplo">
+        <p><strong>Resultado:</strong></p>
+        <div class="ejemplo-repeat-x"></div>
+        </div>
+
+
+
+        <!-- REPEAT Y -->
+        <h3>Repeat vertical</h3>
+
+        <div class="ejemplo-codigo">
+        <pre>
+        background-repeat: repeat-y;
+        </pre>
+        </div>
+
+        <div class="ejemplo">
+        <p><strong>Resultado:</strong></p>
+        <div class="ejemplo-repeat-y"></div>
+        </div>
+
+
+
+        <!-- NO REPEAT -->
+        <h3>No repeat</h3>
+
+        <div class="ejemplo-codigo">
+        <pre>
+        background-repeat: no-repeat;
+        </pre>
+        </div>
+
+        <div class="ejemplo">
+        <p><strong>Resultado:</strong></p>
+        <div class="ejemplo-no-repeat"></div>
+        </div>
+
+
+
+        <!-- SIZE -->
+        <h3>Tamaño de imagen</h3>
+
+        <div class="ejemplo-codigo">
+        <pre>
+        background-size:200px 100px;
+        </pre>
+        </div>
+
+        <div class="ejemplo">
+        <p><strong>Resultado:</strong></p>
+        <div class="ejemplo-size-px"></div>
+        </div>
+
+        </article>
+
+       <!-- TSUPERPOSICION DE FONDOS -->
+        <article id="superposicion">
+
+            <header>
+                <h2>Superoposicion de Fondos</h2>
+            </header>
+
+            <p>
+                Como novedad, en HTML5, ahora tenemos la posibilidad de construir un fondo de pantalla o de un div superponiendo diferentes imágenes individuales (como si fueran capas en Photoshop).
+            </p>
+
+            <div class="ejemplo-codigo">
+
+                <p><strong>Ejemplo imagenes:</strong></p>
+
+                <pre>
+                body{
+                background:url('../img/css.png'), url('../img/rayas3.png'), url('../img/infantil.gif');
+                }
+                </pre>
+
+               <ul>
+                <li>Se utilizan tres imágenes superpuestas para crear un fondo. El orden en que se colocan es importante, porque define cuál imagen queda encima y cuál debajo.</li>
+                <li>La primera imagen se muestra sobre las demás y la última queda al fondo. Para que las imágenes que están debajo se puedan ver, es necesario que las imágenes superiores tengan transparencia.</li>
+                <li>En el ejemplo, el fondo infantil es opaco, el escudo está en una imagen con fondo transparente, y el fondo azul es semitransparente, lo que produce un efecto azulado sobre el fondo infantil.</li>
+               </ul>
+            </div>
+
+            <div class="ejemplo">
+                <p><strong>Resultado:</strong></p>
+                <div class="fondo-superpuesto"></div>>
+            </div>
+
+        </article>
+
+        <!-- EXTRAS -->
+        <article id="extras">
+
+        <header>
+        <h2>Extras</h2>
+        </header>
+
+        <ul>
+
+        <li>
+        Tener una imagen de fondo fija, que no se moverá con el contenido de la página.
+        </li>
+
+        <div class="ejemplo-codigo">
+        <p><strong>Ejemplo de imagen:</strong></p>
+
+        <pre>
+        background:url('img/fondo.jpg');
+        background-attachment:fixed;
+        </pre>
+        </div>
+
+        <div class="ejemplo">
+        <p><strong>Resultado:</strong></p>
+        <div class="fondo-fijo"></div>
+        </div>
+
+
+        <li>
+        Tener una imagen adaptable de fondo que se adaptará al espacio del div donde se ubique.
+        </li>
+
+        <div class="ejemplo-codigo">
+        <p><strong>Ejemplo de imagen:</strong></p>
+
+        <pre>
+        background:url('img/fondo.jpg');
+        background-repeat:no-repeat;
+        background-size:cover;
+        </pre>
+        </div>
+
+        <div class="ejemplo">
+        <p><strong>Resultado:</strong></p>
+        <div class="fondo-adaptable"></div>
+        </div>
+
+        </ul>
+
+        </article>
+
+   </section> 
+
+     <!-- FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Karol Tatiana Ibarra Narvaez</h3>
+            <p>Desarrolladora de Software</p>
+            <ul class="contact-info">
+                <li><img src="../FAVICON/favicon_phone_16.ico"> Tel: 3169195728</li>
+                <li><img src="../FAVICON/favicon_mail_16.ico"> <a href="mailto:kt.ibarra@unimayor.edu.co">kt.ibarra@unimayor.edu.co</a></li>
+                <li><img src="../FAVICON/favicon_user_16 (1).ico"> Git Hub:<a href="https://github.com/dashboard" target="_blank">Mi GitHub</a></li>
+                <li><img src="../FAVICON/favicon_code_16.ico" > Información adicional: <a href="https://html6.es/" target="_blank">HTML6.es</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 Karol Tatiana Ibarra Narvaez. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+#palabrasMagicas .ejemplo{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+margin-top:20px;
+}
+
+#palabrasMagicas .ejemplo div{
+color:black;
+padding:20px;
+width:50%;
+text-align:center;
+}
+
+/* COLOR DE FONDO */
+#palabrasMagicas .ejemplo-color{
+background-color:rgba(255,255,0,0.4);
+padding:20px;
+padding:40px;
+width:50%;
+text-align:center;
+}
+
+/* IMAGEN DE FONDO */
+#palabrasMagicas .ejemplo-imagen{
+background:url("../IMAGEN/MARIPOSAdos.webp");
+height:120px;
+width:50%;
+}
+
+/* REPEAT X */
+#palabrasMagicas .ejemplo-repeat-x{
+background:url("../IMAGEN/MARIPOSAdos.webp");
+background-repeat:repeat-x;
+height:120px;
+width:50%;
+}
+
+/* REPEAT Y */
+#palabrasMagicas .ejemplo-repeat-y{
+background:url("../IMAGEN/MARIPOSAdos.webp");
+background-repeat:repeat-y;
+height:120px;
+width:50%;
+}
+
+/* NO REPEAT */
+#palabrasMagicas .ejemplo-no-repeat{
+background:url("../IMAGEN/MARIPOSAdos.webp");
+background-repeat:no-repeat;
+height:120px;
+width:50%;
+}
+
+/* SIZE PX */
+#palabrasMagicas .ejemplo-size-px{
+background:url("../IMAGEN/MARIPOSAdos.webp");
+background-size:200px 100px;
+background-repeat:no-repeat;
+height:120px;
+width:50%;
+}
+
+/* SIZE PORCENTAJE */
+#palabrasMagicas .ejemplo-size-porcentaje{
+background:url("../IMAGEN/MARIPOSAdos.webp");
+background-size:25%;
+background-repeat:no-repeat;
+height:120px;
+width:50%;
+}
+
+/* CONTENEDOR DEL RESULTADO */
+#superposicion .ejemplo{
+display:flex;
+flex-direction:column;
+align-items:center;
+margin-top:20px;
+}
+
+/* CONTENEDOR DEL RESULTADO */
+#superposicion .ejemplo{
+display:flex;
+flex-direction:column;
+align-items:center;
+margin-top:20px;
+}
+
+#superposicion .fondo-superpuesto{
+
+width:60%;
+height:220px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.2);
+
+background:
+url("../IMAGEN/LOGOSINFONDO.png"),
+url("../IMAGEN/GIFMARIPOSA.gif"),
+url("../IMAGEN/MARIPOSAdos.webp");
+
+background-size:
+120px,
+200px,
+cover;
+
+background-position:
+left 20px top 20px,
+center,
+center;
+
+background-repeat:
+no-repeat,
+no-repeat,
+no-repeat;
+}
+
+
+/* CONTENEDOR RESULTADO */
+#extras .ejemplo{
+display:flex;
+flex-direction:column;
+align-items:center;
+margin-top:15px;
+gap:10px;
+}
+
+/* FONDO FIJO */
+#extras .fondo-fijo{
+width:60%;
+height:200px;
+background:url("../IMAGEN/MARIPOSAdos.webp");
+background-attachment:fixed;
+background-size:cover;
+border-radius:10px;
+}
+
+/* FONDO ADAPTABLE */
+#extras .fondo-adaptable{
+width:60%;
+height:200px;
+background:url("../IMAGEN/MARIPOSAdos.webp");
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+border-radius:10px;
+}

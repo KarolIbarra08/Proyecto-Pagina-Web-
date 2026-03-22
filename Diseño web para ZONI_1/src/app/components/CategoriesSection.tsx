@@ -38,10 +38,8 @@ export function CategoriesSection({ images }: CategoriesSectionProps) {
     ],
     'Peluches Personalizados': [
       { name: 'Capibara', material: 'Felpa Premium', image: 'imagenes/CAPIBARA.jpeg' },
-      { name: 'Peluche Personalizado', material: 'Felpa Suave', image: 'imagenes/MUÑECOS.jpeg' },
     ],
     'Ropa para Mascotas': [
-      { name: 'Sueter para Perro', material: 'Lana Polar', image: 'imagenes/ROPAPERROSDOS.jpeg' },
       { name: 'Ropa Elegante para Mascota', material: 'Algodón Premium', image: 'imagenes/ROPAPERROUNO.jpeg' },
     ],
   };
